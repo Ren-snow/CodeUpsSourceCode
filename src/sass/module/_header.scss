@@ -1,0 +1,177 @@
+@use "global" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.header.is-active {
+  background: $green;
+}
+
+.header__top {
+  padding: rem(21) rem(15);
+  background: rgb(13, 41, 54, 0.68);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq(md) {
+    padding: rem(20) rem(40);
+  }
+}
+
+.header__top.is-active  {
+  background: $green;
+}
+.header__logo {
+  width: rem(102);
+}
+.header__hamburger {
+  width: rem(32);
+  height: rem(24);
+  transition: .3s;
+  position: relative;
+  
+  @include mq(md) {
+    display: none;
+  }
+}
+.hamburger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: rem(1);
+  background-color: #fff;
+  transition: inherit;
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    content: '';
+    transition: inherit;
+  }
+}
+
+.hamburger__line::before {
+  top: rem(-12);
+}
+.hamburger__line::after {
+  top: rem(12);
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line {
+  background-color: transparent;
+  &::before,
+  &::after {
+  top: 0;
+  background-color: #fff;
+}
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line::before {
+  transform: rotate(45deg);
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line::after {
+  transform: rotate(-45deg);
+}
+
+.header__nav {
+  color: #fff;
+  background: $green;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: rem(420);
+  padding: rem(24) rem(37);
+  visibility: hidden;
+  display: none;
+}
+.header__item-wrapper {
+  margin-bottom: rem(40);
+}
+.header__item {
+  font-weight: bold;
+  position: relative;
+}
+.header__starfish {
+  left: rem(-22);
+  width: rem(18);
+  position: absolute;
+}
+.header__sub-item {
+  margin-top: rem(24);
+}
+
+
+// For PC
+.header__list-pc {
+  display: flex;
+  align-items: center;
+  gap: rem(30);
+}
+.header__list-item-pc {
+  color: #fff;
+  font-size: rem(18);
+  text-align: center;
+}
+
+.header__list-item-pc a {
+  @include mq(md)  {
+    display: block;
+    position: relative;
+  }
+}
+
+.header__list-item-pc a::after {
+  @include mq(md) {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: rem(1);
+    background: #fff;
+    bottom: rem(-5);
+    transform: scale(0, 1);
+    transform-origin: center top; 
+    transition: transform 0.3s;  
+  }
+  
+}
+  
+.header__list-item-pc a:hover::after {
+  @include mq(md) {
+    transform: scale(1, 1); 
+  }
+}
+
+.header__list-item-jpn {
+  display: block;
+  font-size: rem(10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

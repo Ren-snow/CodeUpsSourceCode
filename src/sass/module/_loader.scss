@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.loader-bg {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  // display: block;
+  z-index: 100;
+}
+
+.loader {
+  position: absolute;
+  width: rem(250);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    width: rem(496);
+  }
+}
+
+.loader-fade-in {
+  display: none;
+}
+
+
+
+
+

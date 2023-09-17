@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.swiper-button-prev {
+  background: #fff;
+  border: solid rem(1) $green;
+  border-radius: 50%;
+  width: rem(80);
+  height: rem(80);
+  top: rem(24);
+  right: rem(340);
+  left: 70.8333%;
+  z-index: 1;
+}
+
+.swiper-button-next {
+  background: #fff;
+  border: solid rem(1) $green;
+  border-radius: 50%;
+  width: rem(80);
+  height: rem(80);
+  top: rem(24);
+  left: 81.94444%;
+  z-index: 1;
+}
+
+
+.yazirusi {
+  position: relative;
+  width: 100px;
+  margin: 30px;
+}
+.line01 {
+  height: 1px;
+  background-color: #000;
+}
+.line02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: right bottom;
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+.swiper-button-prev__arrow-wrapper,
+.swiper-button-next__arrow-wrapper {
+  position: relative;
+  width: rem(40);
+}
+.swiper-button-prev__arrow:nth-child(1),
+.swiper-button-next__arrow:nth-child(1) {
+  @include mq(md) {
+    left: 0;
+    height: rem(1);
+    width: 100%;
+    position: absolute;
+    border-radius: 100vw;
+    background-color: $green;
+  }
+}
+
+.swiper-button-prev__arrow:nth-child(2) {
+  @include mq(md) {
+    background-color: $green;
+    border-radius: 100vw;
+    position: absolute;
+    top: 0;
+    left: rem(-12);
+    transform-origin: right bottom;
+    width: rem(12);
+    height: rem(1);
+    transform: rotate(135deg);
+  }
+}
+.swiper-button-next__arrow:nth-child(2) {
+  @include mq(md) {
+  background-color: $green;
+  border-radius: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: right bottom;
+  width: rem(12);
+  height: rem(1);
+  transform: rotate(45deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

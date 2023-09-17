@@ -1,0 +1,80 @@
+@use "global" as *;
+.about {
+  margin-bottom: rem(70);
+  @include mq(md) {
+    position: relative;
+  }
+}
+.about__title {
+  margin-bottom: rem(24);
+}
+.about__img-wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: rem(40);
+
+}
+.about__shisa-img {
+  width: 37.101449%;
+  padding-bottom: 8.490566%;
+}
+.about__fish-img {
+  width: 81.449275%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.about__contents {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(840);
+    width: 100%;
+    position: absolute;
+    top: rem(350);
+    left: 16%;
+  }
+  @include mq(xl) {
+    left: 26.11111%;
+  }
+}
+.about__copy {
+  color: $green;
+  font-size: rem(40);
+  margin-bottom: rem(16);
+  line-height: 1;
+  @include mq(md) {
+    width: 48%;
+    color: #fff;
+    font-size: rem(80);
+  }
+}
+.about__text-btn {
+  @include mq(md) {
+    width: 48%;
+    color: #fff;
+  }
+}
+.about__text {
+  margin-bottom: rem(50);
+}
+.about__btn {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

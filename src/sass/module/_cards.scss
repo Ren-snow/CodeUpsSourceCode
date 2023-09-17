@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.cards {
+  padding-left: rem(15);
+  @include mq(md) {
+    padding-left: rem(20);
+  }
+}
+.cards__item {
+  margin-bottom: rem(40);
+  margin-right: rem(24);
+  @include mq(md) {
+    margin-bottom: rem(80);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

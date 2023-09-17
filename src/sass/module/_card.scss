@@ -1,0 +1,95 @@
+@use "global" as *;
+
+.card {
+  display: block;
+  // width: rem(280);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+// .card.cards__item {
+//   width: rem(280);
+// }
+
+.card__main {
+  padding: rem(16);
+}
+.card__header {
+  padding-bottom: rem(8);
+  border-bottom: 1px solid $green;
+}
+.card__type {
+  display: inline-block;
+  padding: rem(4) rem(12);
+  margin-bottom: rem(4);
+  font-size: rem(12);
+  color: $green;
+  border: 1px solid $green;
+}
+.card__title {
+  font-weight: 500;
+}
+.card__body {
+  padding: rem(8) rem(18);
+}
+.card__price-copy {
+  font-size: rem(14);
+  text-align: center;
+  margin-bottom: rem(8);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  align-items: center; 
+}
+.card__price-before {
+  font-size: rem(20);
+  position: relative;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+.card__price-before::before {
+  content: '';
+  display: block;
+  width: rem(76);
+  height: rem(3);
+  background-color:#C94800;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card__price-after {
+  font-size: rem(32);
+  color: $green;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

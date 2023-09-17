@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.section-title {
+  font-weight: normal;
+  text-align: center;
+  font-size: rem(32);
+  color: $font;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+.section-title__first-letter {
+  color: $green;
+}
+.section-title__sub {
+  display: block;
+  color: $green;
+  font-size: rem(12);
+  margin-top: rem(4);
+}
+
+
+
+.section-title.section-title--big {
+  font-size: rem(80);
+}
+.section-title__sub--contact {
+  margin-top: rem(-24);
+}
+.section-title--white {
+  @include mq(md) {
+    color: #fff;
+  }
+}
+.section-title--white .section-title__first-letter {
+  @include mq(md) {
+    color: #fff;
+  }
+}
+.section-title--white .section-title__sub {
+  @include mq(md) {
+    color: #fff;
+  }
+}
+
+
+
+
+
+

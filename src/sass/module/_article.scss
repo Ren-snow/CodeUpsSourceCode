@@ -1,0 +1,33 @@
+@use "global" as *; 
+
+.article {
+  display: block;
+  width: rem(333);
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  padding: rem(16);
+}
+.article__aside {
+  margin-bottom: rem(24);
+}
+.article__header {
+  margin-bottom: rem(4);
+}
+.article__date {
+  font-size: rem(12);
+}
+.article__title {
+  font-weight: 500;
+}
+.article__body {
+  padding: rem(16) 0 rem(8);
+  border-top: 1px solid $green;
+}
+
+
+
+
+
+
+
+
