@@ -4,8 +4,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // loader
     $(function(){
       $(window).on('load',function(){
-        $('.loader').delay(600).fadeOut(600);
-        $('.loader-bg').delay(900).fadeOut(800);
+        // $('.loader').delay(600).fadeOut(600);
+        $('.loader').delay(600).slideUp(400);
+        // $('.loader-bg').delay(900).fadeOut(800);
+        $('.loader-bg').delay(900).slideUp(400);
         $('.loader-fade-in').delay(1600).fadeIn(800);
     });
       setTimeout(function(){
@@ -97,7 +99,6 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 24,
   slidesPerView: 'auto',
   freeMode: true,
-  initialSlide: 1,
   on: {
     init: function () {
       var slides = this.slides;
@@ -121,6 +122,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
       },
       spaceBetween: 40,
+      initialSlide: 1,
       centeredSlides: true, 
     }
   }

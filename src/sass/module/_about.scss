@@ -1,29 +1,51 @@
 @use "global" as *;
 .about {
-  margin-bottom: rem(70);
+  margin-bottom: rem(74);
   @include mq(md) {
     position: relative;
+    margin-bottom: rem(98);
   }
 }
+.about__inner {
+  padding: 0 rem(15);
+  margin: 0 auto;
+    @include mq("md") {
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+}
 .about__title {
-  margin-bottom: rem(24);
+  margin-bottom: rem(26);
+  @include mq(md) {
+    margin-bottom: rem(36);
+  }
 }
 .about__img-wrapper {
   width: 100%;
   position: relative;
-  margin-bottom: rem(40);
-
+  margin-bottom: rem(28);
 }
 .about__shisa-img {
-  width: 37.101449%;
+  width: 37.2%;
   padding-bottom: 8.490566%;
+  @include mq(md) {
+    // margin-left: rem(164);
+    margin-left: rem(10);
+    width: 36.5%;
+  }
 }
 .about__fish-img {
   width: 81.449275%;
   position: absolute;
-  bottom: 0;
+  bottom: rem(12);
   right: 0;
   z-index: -1;
+  @include mq(md) {
+    width: 80%;
+    bottom: rem(44);
+    right: 1%;
+  }
 }
 .about__contents {
   @include mq(md) {
@@ -37,17 +59,19 @@
   }
   @include mq(xl) {
     left: 26.11111%;
+    top: rem(314);
   }
 }
 .about__copy {
   color: $green;
   font-size: rem(40);
-  margin-bottom: rem(16);
+  margin-bottom: rem(18);
   line-height: 1;
   @include mq(md) {
     width: 48%;
     color: #fff;
     font-size: rem(80);
+    line-height: 1.25;
   }
 }
 .about__text-btn {
@@ -57,14 +81,34 @@
   }
 }
 .about__text {
-  margin-bottom: rem(50);
+  margin-bottom: rem(48);
+  @include mq(md) {
+    padding-top: rem(4);
+    padding-left: rem(4);
+    margin-bottom: rem(38);
+  }
+}
+.about__btn-wrapper {
+  margin-right: rem(16);
+  @include mq(md) {
+    padding-left: rem(24);
+  }
 }
 .about__btn {
   margin-right: auto;
   margin-left: auto;
 }
 
-
+.about__coral {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    width: rem(194);
+    bottom: rem(-50);
+    right: 5.7639%;
+  }
+}
 
 
 

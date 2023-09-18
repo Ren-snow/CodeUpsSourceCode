@@ -46,13 +46,15 @@
 .pagetop-btn__arrow:nth-child(2) {
   position: absolute;
   bottom: rem(1);
-  left: rem(-18);
+  left: rem(-10);
   // transform-origin: right bottom;
   width: rem(28);
   height: rem(1);
   background-color: $green;
   border-radius: 100vw;
   @include mq(md) {
+    bottom: rem(1);
+    left: rem(-18);
     width: rem(45);
   }
 }

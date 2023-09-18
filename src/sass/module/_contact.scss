@@ -1,12 +1,21 @@
 @use "global" as *; 
 
 .contact {
-  margin-bottom: rem(100);
+  margin-bottom: rem(102);
+  position: relative;
   @include mq(md) {
     margin-bottom: rem(160);
   }
 }
-
+.contact__inner {
+  padding: 0 rem(15);
+  margin: 0 auto;
+    @include mq("md") {
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+}
 .contact__contents-wrapper {
   @include mq(md) {
     max-width: rem(1080);
@@ -22,14 +31,15 @@
 
 .contact__access {
   @include mq(md) {
-    width: 52.96296%;
+    width: 53.4%;
+    padding-top: rem(4);
     border-right: 1px solid $green;
   }
 }
 .contact__logo {
   max-width: rem(294);
   width: 100%;
-  padding:0 rem(60) rem(6) rem(60);
+  padding:0 rem(60) rem(8) rem(60);
   margin: 0 auto rem(16);
   border-bottom: 1px solid $green;
   @include mq(md) {
@@ -39,7 +49,7 @@
   }
 }
 .contact__address-wrapper {
-  margin-bottom: rem(40);
+  margin-bottom: rem(18);
   @include mq(md) {
     display: flex;
     justify-content: space-between;
@@ -83,23 +93,36 @@
 .contact__inquiry {
   @include mq(md) {
     width: 47.03704%;
+    padding-left: rem(20);
+    padding-bottom: rem(20);
   }
 }
 .contact__title {
   font-size: rem(80);
   margin-bottom: rem(8);
+  
 }
 .contact__catch {
   font-size: rem(14);
   color: $green;
   text-align: center;
-  margin-bottom: rem(40);
+  margin-bottom: rem(36);
 }
 
 .contact__btn {
   margin: 0 auto;
 }
-
+.contact__fish {
+  position: absolute;
+  width: rem(109);
+  top: rem(-26);
+  right: rem(15);
+  @include mq(md) {
+    width: rem(301);
+    right: 3.4722%;
+    top: rem(-36);
+  }
+}
 
 
 

@@ -1,9 +1,21 @@
 @use "global" as *; 
 
 .voice {
-  margin-bottom: rem(80);
+  margin-bottom: rem(82);
+  @include mq(md) {
+    margin-bottom: rem(144);
+    position: relative;
+  }
 }
-
+.voice__inner {
+  padding: 0 rem(15);
+  margin: 0 auto;
+    @include mq("md") {
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+}
 .voice__title {
   margin-bottom: rem(40);
   @include mq(md) {
@@ -11,9 +23,10 @@
   }
 }
 .voice__reviews {
+  margin-bottom: rem(41);
   @include mq(md) {
     display: flex;
-    gap: rem(40);
+    gap: rem(24);
     margin-bottom: rem(80);
   }
 }
@@ -24,11 +37,34 @@
     margin-bottom: 0;
   }
 }
+.voice__review.voice__review--second {
+  margin-bottom: 0;
+}
 
 .voice__btn {
   margin: 0 auto;
 }
 
+.voice__fish {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: rem(-110);
+    left: 6.9444%;
+    width: rem(301);
+  }
+}
+.voice__seahorse {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    bottom: rem(-68);
+    right: 12.5%;
+    width: rem(71);
+  }
+}
 
 
 

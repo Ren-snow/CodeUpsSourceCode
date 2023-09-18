@@ -1,52 +1,40 @@
 @use "global" as *;
 
 .swiper-button-prev {
-  background: #fff;
-  border: solid rem(1) $green;
-  border-radius: 50%;
-  width: rem(80);
-  height: rem(80);
-  top: rem(24);
-  right: rem(340);
-  left: 70.8333%;
-  z-index: 1;
+  @include mq(md) {
+    background: #fff;
+    border: solid rem(1) $green;
+    border-radius: 50%;
+    width: rem(80);
+    height: rem(80);
+    top: rem(30);
+    right: rem(340);
+    left: 70.8333%;
+    z-index: 1;
+  }
 }
 
 .swiper-button-next {
-  background: #fff;
+  @include mq(md) {
+    background: #fff;
   border: solid rem(1) $green;
   border-radius: 50%;
   width: rem(80);
   height: rem(80);
-  top: rem(24);
+  top: rem(30);
   left: 81.94444%;
   z-index: 1;
+  }
 }
 
 
-.yazirusi {
-  position: relative;
-  width: 100px;
-  margin: 30px;
-}
-.line01 {
-  height: 1px;
-  background-color: #000;
-}
-.line02 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform-origin: right bottom;
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  transform: rotate(45deg);
-}
+
 .swiper-button-prev__arrow-wrapper,
 .swiper-button-next__arrow-wrapper {
-  position: relative;
-  width: rem(40);
+  @include mq(md) {
+    position: relative;
+    width: rem(40);
+  }
 }
 .swiper-button-prev__arrow:nth-child(1),
 .swiper-button-next__arrow:nth-child(1) {

@@ -12,41 +12,52 @@
 
 .card__main {
   padding: rem(16);
+  @include mq(md) {
+    padding: rem(24) rem(16) rem(28);
+  }
 }
 .card__header {
-  padding-bottom: rem(8);
+  padding-bottom: rem(6);
   border-bottom: 1px solid $green;
 }
 .card__type {
   display: inline-block;
-  padding: rem(4) rem(12);
-  margin-bottom: rem(4);
+  padding: rem(7) rem(11) rem(4) rem(12);
+  margin-bottom: rem(5);
   font-size: rem(12);
   color: $green;
   border: 1px solid $green;
+  @include mq(md) {
+    padding: rem(7) rem(16) rem(6) rem(14);
+  }
 }
 .card__title {
   font-weight: 500;
+  font-size: rem(16);
 }
 .card__body {
-  padding: rem(8) rem(18);
+  padding: rem(12) rem(18) 0;
+  @include mq(md) {
+    padding-top: rem(18);
+  }
 }
 .card__price-copy {
   font-size: rem(14);
   text-align: center;
-  margin-bottom: rem(8);
   @include mq(md) {
     font-size: rem(16);
+    padding-right: rem(16);
   }
 }
 .card__price {
   display: flex;
   justify-content: space-between;
   font-family: 'Lato', sans-serif;
-  align-items: center; 
+  align-items: center;
 }
 .card__price-before {
   font-size: rem(20);
+  padding-top: rem(6);
   position: relative;
   @include mq(md) {
     font-size: rem(24);
@@ -59,7 +70,7 @@
   height: rem(3);
   background-color:#C94800;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 

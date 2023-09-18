@@ -27,6 +27,9 @@
 }
 .header__logo {
   width: rem(102);
+  @include mq(md) {
+    width: rem(133);
+  }
 }
 .header__hamburger {
   width: rem(32);
@@ -115,7 +118,7 @@
 .header__list-pc {
   display: flex;
   align-items: center;
-  gap: rem(30);
+  gap: rem(40);
 }
 .header__list-item-pc {
   color: #fff;

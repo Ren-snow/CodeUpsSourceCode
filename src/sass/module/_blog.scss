@@ -2,36 +2,63 @@
 
 .blog {
   margin-bottom: rem(80);
-  padding-top: rem(80);
+  padding-top: rem(76);
   @include mq(md) {
-    padding-top: rem(100);
+    padding-top: rem(88);
+    margin-bottom: rem(132);
     background-image: url(../images/common/blog-bg.jpg);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
+    position: relative;
   }
 } 
+.blog__inner {
+  padding: 0 rem(15);
+  margin: 0 auto;
+    @include mq("md") {
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+}
 .blog__title {
   margin-bottom: rem(24);
   @include mq(md) {
-    margin-bottom: rem(80);
+    margin-bottom: rem(76);
   }
 }
 .blog__articles {
   @include mq(md) {
     display: flex;
-    gap: rem(40);
+    gap: rem(24);
   }
 }
 .blog__article  {
-  margin:0 auto rem(40);
+  margin:0 auto rem(38);
+  @include mq(md) {
+    margin-bottom: rem(80);
+  }
 }
-
+.blog__btn-wrapper {
+  @include mq(md) {
+    padding-right: rem(4);
+  }
+}
 .blog__btn {
   margin: 0 auto;
 }
 
-
+.blog__fish {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: rem(24);
+    left: 6.94444%;
+    width: rem(437);
+  }
+}
 
 
 

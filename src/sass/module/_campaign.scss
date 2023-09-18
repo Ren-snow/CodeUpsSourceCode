@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .campaign {
-  margin-bottom: rem(80);
+  margin-bottom: rem(76);
   padding-right: 0;
   overflow-x: hidden;
   @include mq(md) {
-    margin-bottom: rem(130);
+    margin-bottom: rem(122);
   }
 }
 .campaign__inner {
@@ -14,9 +14,14 @@
   }
 }
 .campaign__title {
-  margin-bottom: rem(24);
+  margin-bottom: rem(26);
+  @include mq(md) {
+    margin-bottom: rem(36);
+  }
 }
-
+.campaign__btn-wrapper {
+  margin-right: rem(4);
+}
 .campaign__btn {
   margin: 0 auto rem(4);
 }

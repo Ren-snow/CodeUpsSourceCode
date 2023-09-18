@@ -5,19 +5,25 @@
   width: rem(333);
   background-color: #fff;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
-  padding: rem(16);
+  padding: rem(18) rem(16) rem(16);
+  @include mq(md) {
+    padding-top: rem(16);
+  }
 }
 .article__aside {
   margin-bottom: rem(24);
 }
 .article__header {
-  margin-bottom: rem(4);
+  margin-bottom: rem(6);
 }
 .article__date {
   font-size: rem(12);
+  margin-bottom: rem(6);
 }
 .article__title {
   font-weight: 500;
+  line-height: 1;
+  font-size: rem(16);
 }
 .article__body {
   padding: rem(16) 0 rem(8);
