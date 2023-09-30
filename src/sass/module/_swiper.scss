@@ -1,5 +1,6 @@
 @use "global" as *;
 
+
 .swiper-button-prev {
   @include mq(md) {
     background: #fff;
@@ -75,7 +76,10 @@
   }
 }
 
-
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
 
 
 

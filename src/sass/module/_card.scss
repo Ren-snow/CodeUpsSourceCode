@@ -2,13 +2,36 @@
 
 .card {
   display: block;
-  // width: rem(280);
+  width: rem(280);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  @include mq(md) {
+    width: rem(333);
+  }
 }
 
 // .card.cards__item {
 //   width: rem(280);
 // }
+.card__figure {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.card__figure::before {
+  content:"";
+  display: block;
+  padding-top: 67.14%;
+  @include mq(md) {
+    padding-top: 66.77;
+  }
+}
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
 .card__main {
   padding: rem(16);
@@ -34,6 +57,9 @@
 .card__title {
   font-weight: 500;
   font-size: rem(16);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .card__body {
   padding: rem(12) rem(18) 0;

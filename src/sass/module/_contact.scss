@@ -7,15 +7,11 @@
     margin-bottom: rem(160);
   }
 }
+
 .contact__inner {
-  padding: 0 rem(15);
-  margin: 0 auto;
-    @include mq("md") {
-      max-width: $inner + strip-unit($padding-pc) * 2;
-      padding-right: $padding-pc;
-      padding-left: $padding-pc;
-    }
+  max-width: rem(600);
 }
+
 .contact__contents-wrapper {
   @include mq(md) {
     max-width: rem(1080);

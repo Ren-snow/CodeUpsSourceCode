@@ -7,15 +7,11 @@
     position: relative;
   }
 }
+
 .voice__inner {
   padding: 0 rem(15);
-  margin: 0 auto;
-    @include mq("md") {
-      max-width: $inner + strip-unit($padding-pc) * 2;
-      padding-right: $padding-pc;
-      padding-left: $padding-pc;
-    }
 }
+
 .voice__title {
   margin-bottom: rem(40);
   @include mq(md) {
@@ -26,20 +22,25 @@
   margin-bottom: rem(41);
   @include mq(md) {
     display: flex;
-    gap: rem(24);
-    margin-bottom: rem(80);
+    flex-wrap: wrap;
+    // gap: rem(40);
+    gap: 3.7%;
+    margin-bottom: 0;
   }
 }
 
 .voice__review {
-  margin-bottom: rem(40);
+  margin: 0 auto rem(40) auto;
+  // margin-bottom: rem(40);
+
   @include mq(md) {
-    margin-bottom: 0;
+    margin: 0 0 rem(80);
+    margin-bottom: rem(80);
   }
 }
-.voice__review.voice__review--second {
-  margin-bottom: 0;
-}
+// .voice__review.voice__review--second {
+//   margin-bottom: 0;
+// }
 
 .voice__btn {
   margin: 0 auto;

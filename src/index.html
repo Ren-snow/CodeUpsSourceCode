@@ -246,12 +246,6 @@
       </div>
     </header>
     <main>
-      <btn id="js-pagetop" class="pagetop-btn">
-        <div class="pagetop-btn__arrow-wrapper">
-          <span class="pagetop-btn__arrow"></span
-          ><span class="pagetop-btn__arrow"></span>
-        </div>
-      </btn>
       <div class="fv">
         <div class="fv__wrapper slide">
           <div class="slide__image"></div>
@@ -269,8 +263,8 @@
         </div>
       </div>
       <section class="campaign">
-        <div class="campaign__inner">
-          <h2 class="campaign__title section-title">
+        <div class="campaign__inner inner">
+          <h2 class="campaign__title section-title en">
             <span class="section-title__first-letter">C</span>ampaign
             <span class="section-title__sub">キャンペーン</span>
           </h2>
@@ -286,7 +280,7 @@
               ><span class="swiper-button-next__arrow"></span>
             </div>
           </div>
-          <div class="swiper">
+          <div class="swiper campaign__swiper">
             <div class="swiper-wrapper campaign__cards cards">
               <!-- Slides -->
               <a href="#" class="swiper-slide cards__item card campaign__card">
@@ -388,33 +382,47 @@
             </div>
           </div>
           <div class="campaign__btn-wrapper btn-wrapper">
-            <a href="#" class="campaign__btn btn"
+            <a href="#" class="campaign__btn btn en"
               ><p class="btn__text">View more</p>
-              <span class="btn__arrow"></span
+              <span class="btn__arrow"></span><span class="btn__hover-bg"></span
             ></a>
           </div>
         </div>
       </section>
       <section class="about">
-        <div class="about__inner">
-          <h2 class="section-title about__title">
+        <div class="inner about__inner">
+          <h2 class="section-title about__title en">
             <span class="section-title__first-letter">A</span>bout us
             <span class="section-title__sub">私たちについて</span>
           </h2>
           <div class="about__img-wrapper">
-            <img
-              src="./assets/images/common/about1.jpg"
-              alt="Shisa"
-              class="about__shisa-img"
-            />
-            <img
-              src="./assets/images/common/about2.png"
-              alt=""
-              class="about__fish-img"
-            />
+            <picture class="about__shisa-img">
+              <img
+                src="./assets/images/common/about1.jpg"
+                alt="Shisa"
+                class="about__shisa-img-pc u-desktop"
+              />
+              <img
+                src="./assets/images/common/about1-sp.jpg"
+                alt="Shisa"
+                class="about__shisa-img-sp u-mobile"
+              />
+            </picture>
+            <picture class="about__fish-img">
+              <img
+                src="./assets/images/common/about2.png"
+                alt=""
+                class="about__shisa-img-pc u-desktop"
+              />
+              <img
+                src="./assets/images/common/about2.png"
+                alt=""
+                class="about__shisa-img-sp u-mobile"
+              />
+            </picture>
           </div>
           <div class="about__contents">
-            <p class="about__copy">
+            <p class="about__copy en">
               Dive into<br />
               the Ocean
             </p>
@@ -424,9 +432,10 @@
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
               </p>
               <div class="about__btn-wrapper btn-wrapper">
-                <a href="#" class="about__btn btn"
+                <a href="#" class="about__btn btn en"
                   ><p class="btn__text">View more</p>
                   <span class="btn__arrow"></span
+                  ><span class="btn__hover-bg"></span
                 ></a>
               </div>
             </div>
@@ -439,8 +448,8 @@
         />
       </section>
       <section class="info">
-        <div class="info__inner">
-          <h2 class="section-title info__title">
+        <div class="info__inner inner">
+          <h2 class="section-title info__title en">
             <span class="section-title__first-letter">I</span>nformation
             <span class="section-title__sub">ダイビング情報</span>
           </h2>
@@ -459,9 +468,10 @@
                 正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
               </p>
               <div class="info__btn-wrapper btn-wrapper">
-                <a href="#" class="info__btn btn--bg btn"
+                <a href="#" class="info__btn btn--bg btn en"
                   ><p class="btn__text">View more</p>
                   <span class="btn__arrow"></span
+                  ><span class="btn__hover-bg"></span
                 ></a>
               </div>
             </div>
@@ -469,8 +479,8 @@
         </div>
       </section>
       <section class="blog">
-        <div class="blog__inner">
-          <h2 class="section-title section-title--white blog__title">
+        <div class="blog__inner inner">
+          <h2 class="section-title section-title--white blog__title en">
             <span class="section-title__first-letter">B</span>log
             <span class="section-title__sub">ブログ</span>
           </h2>
@@ -540,9 +550,9 @@
             </a>
           </div>
           <div class="blog__btn-wrapper btn-wrapper">
-            <a href="#" class="blog__btn btn"
+            <a href="#" class="blog__btn btn en"
               ><p class="btn__text">View more</p>
-              <span class="btn__arrow"></span
+              <span class="btn__arrow"></span><span class="btn__hover-bg"></span
             ></a>
           </div>
         </div>
@@ -553,8 +563,8 @@
         />
       </section>
       <section class="voice">
-        <div class="voice__inner">
-          <h2 class="section-title voice__title">
+        <div class="voice__inner inner">
+          <h2 class="section-title voice__title en">
             <span class="section-title__first-letter">V</span>oice
             <span class="section-title__sub">お客様の声</span>
           </h2>
@@ -586,7 +596,7 @@
                 </p>
               </div>
             </div>
-            <div class="voice__review voice__review--second review">
+            <div class="voice__review review">
               <div class="review__header">
                 <div class="review__info">
                   <div class="review__age-type">
@@ -615,9 +625,9 @@
             </div>
           </div>
           <div class="voice__btn-wrapper btn-wrapper">
-            <a href="#" class="voice__btn btn"
+            <a href="#" class="voice__btn btn en"
               ><p class="btn__text">View more</p>
-              <span class="btn__arrow"></span
+              <span class="btn__arrow"></span><span class="btn__hover-bg"></span
             ></a>
           </div>
         </div>
@@ -633,8 +643,8 @@
         />
       </section>
       <section class="price">
-        <div class="price__inner">
-          <h2 class="section-title price__title">
+        <div class="price__inner inner">
+          <h2 class="section-title price__title en">
             <span class="section-title__first-letter">P</span>rice
             <span class="section-title__sub">料金一覧</span>
           </h2>
@@ -642,7 +652,7 @@
             <img
               src="./assets/images/common/price-mobile.jpg"
               alt="Sea Turtle"
-              class="price__picture"
+              class="price__img"
             />
           </div>
           <div class="price__contents-wrapper">
@@ -744,14 +754,14 @@
               <img
                 src="./assets/images/common/price1.jpg"
                 alt="Sea Turtle"
-                class="price__picture"
+                class="price__img"
               />
             </div>
           </div>
           <div class="price__btn-wrapper btn-wrapper">
-            <a href="#" class="price__btn btn btn--bg"
+            <a href="#" class="price__btn btn btn--bg en"
               ><p class="btn__text">View more</p>
-              <span class="btn__arrow"></span
+              <span class="btn__arrow"></span><span class="btn__hover-bg"></span
             ></a>
           </div>
         </div>
@@ -767,7 +777,7 @@
           alt="fish"
           class="contact__fish"
         />
-        <div class="contact__inner">
+        <div class="contact__inner inner">
           <div class="contact__contents-wrapper">
             <div class="contact__access">
               <div class="contact__logo">
@@ -797,7 +807,7 @@
               </div>
             </div>
             <div class="contact__inquiry">
-              <h2 class="section-title section-title--big contact__title">
+              <h2 class="section-title section-title--big contact__title en">
                 <span class="section-title__first-letter">C</span>ontact
                 <span class="section-title__sub section-title__sub--contact"
                   >お問合せ</span
@@ -805,9 +815,10 @@
               </h2>
               <p class="contact__catch">ご予約・お問い合わせはコチラ</p>
               <div class="contact__btn-wrapper btn-wrapper">
-                <a href="#" class="contact__btn btn"
-                  ><p class="btn__text">Contact us</p>
-                  <span class="btn__arrow"></span
+                <a href="#" class="contact__btn btn en">
+                  <p class="btn__text">Contact us</p>
+                  <span class="btn__arrow"></span>
+                  <span class="btn__hover-bg"></span
                 ></a>
               </div>
             </div>
@@ -815,8 +826,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__inner">
+    <footer class="footer" id="js-footer">
+      <div class="footer__inner inner">
         <div class="footer__figure-wrapper">
           <a href="#" class="footer__logo-wrapper">
             <img
@@ -826,20 +837,20 @@
             />
           </a>
           <div class="footer__icon-wrapper">
-            <div class="footer__icon">
+            <a href="#" class="footer__icon">
               <img
                 src="./assets/images/common/FacebookLogo.svg"
                 alt=""
                 class="footer__fb"
               />
-            </div>
-            <div class="footer__icon--ig">
+            </a>
+            <a href="#" class="footer__icon footer__icon--ig">
               <img
                 src="./assets/images/common/InstagramLogo.svg"
                 alt=""
                 class="footer__ig"
               />
-            </div>
+            </a>
           </div>
         </div>
         <nav class="footer__nav">
@@ -1001,6 +1012,12 @@
         </small>
       </div>
     </footer>
+    <btn id="js-pagetop" class="pagetop-btn">
+      <div class="pagetop-btn__arrow-wrapper">
+        <span class="pagetop-btn__arrow"></span
+        ><span class="pagetop-btn__arrow"></span>
+      </div>
+    </btn>
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"></script> -->

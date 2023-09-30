@@ -7,15 +7,11 @@
     padding: rem(88) 0 rem(72);
   }
 }
+
 .info__inner {
-  padding: 0 rem(15); 
-  margin: 0 auto;
-    @include mq("md") {
-      max-width: $inner + strip-unit($padding-pc) * 2;
-      padding-right: $padding-pc;
-      padding-left: $padding-pc;
-    }
+  max-width: rem(600);
 }
+
 .info__title {
   margin-bottom: rem(24);
 }
@@ -28,13 +24,35 @@
 }
 
 .info__figure {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   margin-bottom: rem(30);
     @include mq(md) {
-      margin-top: rem(16);
-      margin-left: rem(8);
+      // margin-top: rem(16);
+      // margin-left: rem(8);
       width: 49%;
   }
 }
+
+.info__figure::before {
+  content:"";
+  display: block;
+  padding-top: 65.8%;
+  @include mq(md) {
+    padding-top: 65.93;
+  }
+}
+
+.info__fish-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
 .info__text-btn {
   @include mq(md) {
     width: 49.2%;

@@ -3,14 +3,21 @@
 .footer {
   background: $green;
 }
+// .footer__inner {
+//   padding: rem(50) rem(15) 0;
+//   max-width: rem(500);
+//   @include mq(md) {
+//     padding: rem(80) rem(20) 0;
+//     max-width: rem(960);
+//     width: 100%;
+//     margin: 0 auto rem(40);
+//   }
+// }
 .footer__inner {
-  padding: rem(50) rem(15) 0;
-  max-width: rem(500);
+  padding-top: rem(50);
+  max-width: rem(600);
   @include mq(md) {
-    padding: rem(80) rem(20) 0;
-    max-width: rem(960);
-    width: 100%;
-    margin: 0 auto rem(40);
+    padding-top: rem(80);
   }
 }
 .footer__figure-wrapper {
@@ -36,6 +43,8 @@
 }
 .footer__icon {
   width: rem(19.5);
+  display: block;
+  transition: .1s;
   @include mq(md) {
     width: rem(32);
   }
@@ -46,6 +55,11 @@
     width: rem(36);
   }
 }
+
+.footer__icon:hover {
+  opacity: 0.7;
+}
+
 .footer__nav {
   color: #fff;
   background: $green;
@@ -53,31 +67,42 @@
   justify-content: space-between;
   margin: 0 auto;
   // max-width: rem(500);
-  padding: rem(38) rem(10) rem(38) rem(24);
+  // padding: rem(38) rem(10) rem(38) rem(24);
+  padding: rem(38) 0 rem(38) rem(24);
   padding-bottom: 0;
   @include mq(md) {
     // max-width: rem(1008);
     // width: 100%;
-    justify-content: left;
+    justify-content: space-between;
     // justify-content: space-between;
-    gap: rem(142);
+    // gap: rem(140);
+    gap: rem(80);
     padding: rem(24);
     padding-bottom: 0;
+  }
+  @include mq(xl) {
+    justify-content: left;
+    gap: rem(142);
   }
 }
 .footer__nav-half {
   @include mq(md) {
     display: flex;
     justify-content: center;
+    gap: rem(140);
+  }
+  @include mq(xl) {
     gap: rem(142);
   }
 }
 .footer__item-wrapper {
   margin-bottom: rem(34);
+  max-width: rem(200);
 }
 .footer__item {
   font-weight: bold;
   position: relative;
+  transition: 0.3s;
 }
 .footer__item--lh {
   line-height: 1.3;
@@ -89,6 +114,7 @@
 }
 .footer__sub-item {
   margin-top: rem(18);
+  transition: 0.3s;
 }
 .footer__small-wrapper {
   text-align: center;
@@ -105,5 +131,13 @@
     font-size: rem(14);
   }
 }
+
+.footer__item:hover {
+  opacity: 0.8;
+}
+.footer__sub-item:hover {
+  opacity: 0.8;
+}
+
 
 

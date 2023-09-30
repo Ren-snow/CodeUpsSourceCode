@@ -1,12 +1,9 @@
 @use "global" as *;
 
-.cards {
-  padding-left: rem(15);
-
-  @include mq(md) {
-    padding-left: rem(20);
-  }
-}
+// .cards {
+//   @include mq(md) {
+//   }
+// }
 .cards__item {
   margin-bottom: rem(39);
   margin-right: rem(24);

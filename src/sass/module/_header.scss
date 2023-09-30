@@ -2,23 +2,28 @@
 
 .header {
   position: fixed;
+  height: rem(80);
   top: 0;
   right: 0;
   left: 0;
   z-index: 10;
+  @include mq(md) {
+    height: rem(90);  
+  }
 }
 .header.is-active {
   background: $green;
 }
 
 .header__top {
-  padding: rem(21) rem(15);
+  padding: 0 rem(15);
+  height: inherit;
   background: rgb(13, 41, 54, 0.68);
   display: flex;
   justify-content: space-between;
   align-items: center;
   @include mq(md) {
-    padding: rem(20) rem(40);
+    padding: 0 rem(40);
   }
 }
 
@@ -86,16 +91,27 @@
 .hamburger[aria-expanded="true"] .hamburger__line::after {
   transform: rotate(-45deg);
 }
-
+.header__menu {
+  background: $green;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: -10;
+}
+.js-header.is-active .header__menu {
+  z-index: 50;
+  opacity: 1;
+  pointer-events: auto;
+}
 .header__nav {
   color: #fff;
-  background: $green;
   justify-content: space-between;
   margin: 0 auto;
   max-width: rem(420);
   padding: rem(24) rem(37);
-  visibility: hidden;
-  display: none;
+  display: flex;
 }
 .header__item-wrapper {
   margin-bottom: rem(40);
@@ -115,20 +131,28 @@
 
 
 // For PC
+.header__nav-pc {
+  height: inherit;
+}
 .header__list-pc {
   display: flex;
   align-items: center;
   gap: rem(40);
+  height: inherit;
 }
 .header__list-item-pc {
+  height: inherit;
   color: #fff;
   font-size: rem(18);
   text-align: center;
 }
 
 .header__list-item-pc a {
+  
   @include mq(md)  {
+    height: inherit;
     display: block;
+    padding-top: rem(26);
     position: relative;
   }
 }
@@ -141,7 +165,7 @@
     width: 100%;
     height: rem(1);
     background: #fff;
-    bottom: rem(-5);
+    bottom: rem(18);
     transform: scale(0, 1);
     transform-origin: center top; 
     transition: transform 0.3s;  
