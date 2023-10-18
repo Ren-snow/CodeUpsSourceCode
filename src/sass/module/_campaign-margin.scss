@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.campaign-margin {
+  margin-bottom: rem(76);
+  @include mq(md) {
+    margin-bottom: rem(122);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

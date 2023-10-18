@@ -99,6 +99,7 @@
   pointer-events: none;
   transition: 0.3s;
   z-index: -10;
+  overflow-y: scroll;
 }
 .js-header.is-active .header__menu {
   z-index: 50;
@@ -151,9 +152,13 @@
   
   @include mq(md)  {
     height: inherit;
-    display: block;
-    padding-top: rem(26);
+    // display: block;
+    // padding-top: rem(26);
+    display: flex;
+    align-items: center;
     position: relative;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

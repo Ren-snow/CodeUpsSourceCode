@@ -138,7 +138,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     slidesPerView: 'auto',
     freeMode: true,
-    centeredSlides: true, 
+    centeredSlides: true,   
     breakpoints: {
     768: {
       // freeMode: false,
@@ -147,7 +147,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         prevEl: '.swiper-button-prev',
       },
       spaceBetween: 40,
-      initialSlide: 1,
+      initialSlide: 2,
     }
     }
     });

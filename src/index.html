@@ -13,14 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- Swiper -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.css"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -29,9 +25,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="loader-bg">
+    <!-- <div class="loader-bg">
       <img src="./assets/images/common/loading.svg" alt="" class="loader" />
-    </div>
+    </div> -->
     <header class="header js-header loader-fade-in" id="js-header">
       <div class="header__top js-header-top">
         <h1 class="header__logo">
@@ -246,7 +242,7 @@
       </div>
     </header>
     <main>
-      <div class="fv">
+      <div class="fv fv-margin">
         <div class="fv__wrapper slide">
           <div class="slide__image"></div>
           <div class="slide__image"></div>
@@ -254,18 +250,19 @@
           <div class="slide__image"></div>
         </div>
         <div class="fv__title loader-fade-in">
-          <img
+          <!-- <img
             src="./assets/images/common/DIVING.svg"
             alt="DIVING"
             class="fv__main-title"
-          />
+          /> -->
+          <h2 class="fv__main-title">DIVING</h2>
           <p class="fv__sub-title">into the ocean</p>
         </div>
       </div>
-      <section class="campaign">
+      <section class="campaign campaign-margin">
         <div class="campaign__inner inner">
           <h2 class="campaign__title section-title en">
-            <span class="section-title__first-letter">C</span>ampaign
+            Campaign
             <span class="section-title__sub">キャンペーン</span>
           </h2>
           <div class="swiper-button-prev">
@@ -283,6 +280,7 @@
           <div class="swiper campaign__swiper">
             <div class="swiper-wrapper campaign__cards cards">
               <!-- Slides -->
+
               <a href="#" class="swiper-slide cards__item card campaign__card">
                 <div class="card__aside">
                   <div class="card__figure">
@@ -389,10 +387,10 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about about-margin">
         <div class="inner about__inner">
           <h2 class="section-title about__title en">
-            <span class="section-title__first-letter">A</span>bout us
+            About us
             <span class="section-title__sub">私たちについて</span>
           </h2>
           <div class="about__img-wrapper">
@@ -450,7 +448,7 @@
       <section class="info">
         <div class="info__inner inner">
           <h2 class="section-title info__title en">
-            <span class="section-title__first-letter">I</span>nformation
+            Information
             <span class="section-title__sub">ダイビング情報</span>
           </h2>
           <div class="info__contents">
@@ -478,10 +476,10 @@
           </div>
         </div>
       </section>
-      <section class="blog">
+      <section class="blog blog-margin">
         <div class="blog__inner inner">
           <h2 class="section-title section-title--white blog__title en">
-            <span class="section-title__first-letter">B</span>log
+            Blog
             <span class="section-title__sub">ブログ</span>
           </h2>
           <div class="blog__articles">
@@ -562,10 +560,10 @@
           class="blog__fish"
         />
       </section>
-      <section class="voice">
+      <section class="voice voice-margin">
         <div class="voice__inner inner">
           <h2 class="section-title voice__title en">
-            <span class="section-title__first-letter">V</span>oice
+            Voice
             <span class="section-title__sub">お客様の声</span>
           </h2>
           <div class="voice__reviews">
@@ -642,10 +640,10 @@
           class="voice__seahorse"
         />
       </section>
-      <section class="price">
+      <section class="price price-margin">
         <div class="price__inner inner">
           <h2 class="section-title price__title en">
-            <span class="section-title__first-letter">P</span>rice
+            Price
             <span class="section-title__sub">料金一覧</span>
           </h2>
           <div class="price__figure u-mobile">
@@ -771,7 +769,7 @@
           class="price__fish"
         />
       </section>
-      <section class="contact">
+      <section class="contact contact-margin">
         <img
           src="./assets/images/common/fish1.png"
           alt="fish"

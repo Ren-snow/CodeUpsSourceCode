@@ -1,9 +1,7 @@
 @use "global" as *; 
 
 .voice {
-  margin-bottom: rem(82);
   @include mq(md) {
-    margin-bottom: rem(144);
     position: relative;
   }
 }
@@ -26,16 +24,15 @@
     // gap: rem(40);
     gap: 3.7%;
     margin-bottom: 0;
+    margin-bottom: rem(80);
   }
 }
 
 .voice__review {
-  margin: 0 auto rem(40) auto;
-  // margin-bottom: rem(40);
-
+  // margin: 0 auto rem(40) auto;
+  margin: 0 auto rem(40);
   @include mq(md) {
-    margin: 0 0 rem(80);
-    margin-bottom: rem(80);
+    margin: 0 auto
   }
 }
 // .voice__review.voice__review--second {
@@ -52,7 +49,8 @@
     display: block;
     position: absolute;
     top: rem(-110);
-    left: 6.9444%;
+    // left: 6.9444%;
+    left: calc(50% - min(48%, 40rem));
     width: rem(301);
   }
 }
@@ -62,7 +60,8 @@
     display: block;
     position: absolute;
     bottom: rem(-68);
-    right: 12.5%;
+    // right: 12.5%;
+    right: calc(50% - min(48%, 40rem));
     width: rem(71);
   }
 }

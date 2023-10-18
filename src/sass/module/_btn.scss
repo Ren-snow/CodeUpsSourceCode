@@ -9,7 +9,8 @@
   height: rem(54);
   box-sizing: border-box; 
   border: 1px solid $green;
-  display: flex;
+  // display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
   position: relative;

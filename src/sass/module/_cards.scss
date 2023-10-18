@@ -1,15 +1,15 @@
 @use "global" as *;
 
-// .cards {
-//   @include mq(md) {
-//   }
-// }
+.cards {
+  flex: 1;
+}
 .cards__item {
-  margin-bottom: rem(39);
+  // margin-bottom: rem(39);
+  // margin-bottom: rem(4);
   margin-right: rem(24);
-  @include mq(md) {
-    margin-bottom: rem(80);
-  }
+  // @include mq(md) {
+  //   margin-bottom: rem(80);
+  // }
 }
 
 

@@ -2,14 +2,9 @@
 
 .fv {
   height: 100vh;
-  
-  margin-bottom: rem(36);
-  @include mq(md) {
-    margin-bottom: rem(120);
-  }
 }
 .fv__title {
-  width: rem(244);
+  // width: rem(244);
   text-align: center;
   position: absolute;
   top: 50.5%;                    
@@ -19,10 +14,21 @@
     width: rem(496);
   }
 }
+.fv__main-title {
+  font-family: 'Lato', sans-serif;
+  font-size: rem(40);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.54em;
+  @include mq(md){
+    font-size: rem(80);
+  }
+  
+}
 .fv__sub-title {
   color: #fff;
   font-size: rem(20);
-  margin-top: rem(12);
+  font-family: 'Gotu', sans-serif;
 }
 
 

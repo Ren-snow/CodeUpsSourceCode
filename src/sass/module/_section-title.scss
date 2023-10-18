@@ -9,9 +9,10 @@
     font-size: rem(40);
   }
 }
-.section-title__first-letter {
+.section-title::first-letter {
   color: $green;
 }
+
 .section-title__sub {
   display: block;
   color: $green;
@@ -29,6 +30,11 @@
   margin-top: rem(-24);
 }
 .section-title--white {
+  @include mq(md) {
+    color: #fff;
+  }
+}
+.section-title--white::first-letter {
   @include mq(md) {
     color: #fff;
   }

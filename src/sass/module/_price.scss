@@ -3,10 +3,8 @@
 .price {
   background: #DDF0F1;
   padding: rem(78) 0 rem(82);
-  margin-bottom: rem(80);
   @include mq(md) {
     padding: rem(88) 0 rem(104);
-    margin-bottom: rem(138);
     position: relative;
   }
 }
@@ -30,7 +28,7 @@
   overflow: hidden;
   @include mq(md) {
     width: 45.68245%;
-    margin-right: rem(-8);
+    // margin-right: rem(-8);
   }
 }
 
@@ -62,9 +60,9 @@
 .price__contents-wrapper {
   @include mq(md) {
     display: flex;
-    // justify-content: space-between;
-    max-width: rem(1077);
-    gap: 7%;
+    justify-content: space-between;
+    // max-width: rem(1077);
+    // gap: 7%;
     width: 100%;
     margin-bottom: rem(40);
     
@@ -73,8 +71,8 @@
 .price__contents {
   @include mq(md) {
     width: 45.68245%;
-    margin-top: rem(3);
-    margin-left: rem(12);
+    // margin-top: rem(3);
+    // margin-left: rem(12);
   }
 }
 .price__table-wrapper {
@@ -128,7 +126,8 @@
     width: rem(437);
     position: absolute;
     bottom: rem(60);
-    left: 6.9444%;
+    // left: 6.9444%;
+    left: calc(50% - min(48%, 40rem));
   }
 }
 
