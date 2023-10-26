@@ -1,8 +1,9 @@
 @use "global" as *;
 
 .about {
-  margin-bottom: rem(74);
+  margin-bottom: rem(70);
   @include mq(md) {
-    margin-bottom: rem(98);
+    // margin-bottom: rem(98);
+    margin-bottom: rem(140);
   }
 }

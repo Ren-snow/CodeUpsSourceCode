@@ -136,18 +136,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     const swiper = new Swiper('.swiper', {
     grabCursor: true,
     spaceBetween: 24,
-    slidesPerView: 'auto',
     freeMode: true,
-    centeredSlides: true,   
+    slidesPerView: 'auto',
+    speed: 800,
     breakpoints: {
     768: {
-      // freeMode: false,
+      freeMode: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
       spaceBetween: 40,
-      initialSlide: 2,
+      initialSlide: 0,
     }
     }
     });

@@ -28,9 +28,9 @@
   // width: rem(149);
   width: 47.6%;
   border-bottom: 1px solid $green;
-  @include mq(sm) {
-    width: 65%;
-  }
+  // @include mq(sm) {
+  //   width: 65%;
+  // }
   @include mq(md) {
     width: rem(276);
   }
@@ -83,18 +83,18 @@
   overflow: hidden;
   width: rem(151);
   // width: 43.768%;
-  @include mq(sm) {
-    width: 22%;
-  }
+  // @include mq(sm) {
+  //   width: 22%;
+  // }
   @include mq(md) {
     width: 33%;
   }
-  @include mq(lg) {
-    width: 35%;
-  }
-  @include mq(xl) {
-    width: 38.2%;
-  }
+  // @include mq(lg) {
+  //   width: 35%;
+  // }
+  // @include mq(xl) {
+  //   width: 38.2%;
+  // }
 }
 
 .review__figure::before {

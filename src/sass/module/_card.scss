@@ -96,12 +96,15 @@
 .card__price-before::before {
   content: '';
   display: block;
-  width: rem(76);
+  width: rem(78);
   height: rem(3);
   background-color:#C94800;
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
+  @include mq(md) {
+    width: rem(92);
+  }
 }
 
 .card__price-after {
