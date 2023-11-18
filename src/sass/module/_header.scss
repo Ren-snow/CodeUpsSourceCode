@@ -99,7 +99,8 @@
   pointer-events: none;
   transition: 0.3s;
   z-index: -10;
-  overflow-y: scroll;
+  // overflow-y: scroll;
+  overflow: auto;
 }
 .js-header.is-active .header__menu {
   z-index: 50;
@@ -107,11 +108,12 @@
   pointer-events: auto;
 }
 .header__nav {
+  overflow-y: scroll;
   color: #fff;
   justify-content: space-between;
   margin: 0 auto;
   max-width: rem(420);
-  padding: rem(24) rem(37);
+  padding: rem(24) rem(37) rem(90);
   display: flex;
 }
 .header__item-wrapper {

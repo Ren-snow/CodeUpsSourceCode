@@ -16,10 +16,12 @@
 }
 .campaign__swiper {
   margin-right: calc(50% - 50vw);
-  padding-bottom: rem(40);
+  padding-bottom: rem(12);
+  margin-bottom: rem(28);
   
   @include mq(md) {
-    padding-bottom: rem(80);
+    // padding-bottom: rem(80);
+    margin-bottom: rem(68);
   }
 }
 .campaign__cards.cards {

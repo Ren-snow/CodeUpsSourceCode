@@ -11,7 +11,7 @@
   left: 50%;                   
   transform: translateY(-50%) translateX(-50%);
   @include mq(md) {
-    width: rem(496);
+    // width: rem(496);
   }
 }
 .fv__main-title {
@@ -22,6 +22,7 @@
   letter-spacing: 0.54em;
   @include mq(md){
     font-size: rem(80);
+    text-indent: 0.54em;
   }
   
 }
