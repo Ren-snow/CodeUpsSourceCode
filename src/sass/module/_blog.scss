@@ -45,11 +45,13 @@
 .blog__articles {
   margin-bottom: rem(38);
   @include mq(md) {
-    display: flex;
+    // display: flex;
+    display: grid;
     gap: 3.7%;
     // justify-content: space-between;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    // justify-content: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    // flex-wrap: wrap;
     margin-bottom: rem(80);
   }
 }

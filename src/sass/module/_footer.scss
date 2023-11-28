@@ -79,8 +79,12 @@
   }
   
 }
+.footer__nav-quarter {
+  display: grid;
+  gap: rem(34);
+}
 .footer__item-wrapper {
-  margin-bottom: rem(34);
+  // margin-bottom: rem(34);
   max-width: rem(200);
 }
 .footer__item {

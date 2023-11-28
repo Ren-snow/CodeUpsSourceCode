@@ -4,6 +4,7 @@
   overflow-x: hidden;
 }
 .campaign__inner {
+  margin-bottom: rem(4);
   @include mq(md) {
     position: relative;
   }

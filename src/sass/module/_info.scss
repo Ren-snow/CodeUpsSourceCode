@@ -65,7 +65,9 @@
   font-size: rem(20);
   font-weight: bold;
   padding-bottom: rem(2);
+  margin-bottom: rem(8);
   line-height: 1;
+  border-bottom: 1px solid $green;
   @include mq(md) {
     font-size: rem(24);
     padding-bottom: rem(4);
@@ -73,8 +75,8 @@
 }
 .info__text {
   font-family: 'Noto Sans JP', sans-serif;
-  border-top: 1px solid $green;
-  padding-top: rem(8);
+  // border-top: 1px solid $green;
+  // padding-top: rem(8);
   margin-bottom: rem(40);
 }
 .info__btn-wrapper {

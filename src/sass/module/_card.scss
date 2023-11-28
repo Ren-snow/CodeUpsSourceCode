@@ -45,7 +45,11 @@
 .card__header {
   flex-grow: 1;
   padding-bottom: rem(6);
+  margin-bottom: rem(12);
   border-bottom: 1px solid $green;
+  @include mq(md) {
+    margin-bottom: rem(18);
+  }
 }
 .card__type {
   display: inline-block;
@@ -65,17 +69,18 @@
   
 }
 .card__body {
-  padding: rem(12) rem(18) 0;
-  @include mq(md) {
-    padding-top: rem(18);
-  }
+  // padding: rem(12) rem(18) 0;
+  padding: 0 rem(8);
+  // @include mq(md) {
+  //   padding-top: rem(18);
+  // }
 }
 .card__price-copy {
   font-size: rem(14);
   text-align: center;
   @include mq(md) {
     font-size: rem(16);
-    padding-right: rem(16);
+    // padding-right: rem(16);
   }
 }
 .card__price {

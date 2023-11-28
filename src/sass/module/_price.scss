@@ -29,6 +29,7 @@
   @include mq(md) {
     width: 45.68245%;
     // margin-right: rem(-8);
+    margin-bottom: 0;
   }
 }
 
@@ -47,13 +48,6 @@
   bottom: 0;
   right: 0;
 }
-
-
-
-
-
-
-
 
 
 
@@ -85,12 +79,14 @@
 }
 .price__type {
   font-size: rem(16);
-  margin-bottom: rem(2);
+  padding-bottom: rem(2);
+  // margin-bottom: rem(2);
+  border-bottom: 1px solid $green;
 }
 .price__table {
   width: 100%;
   padding: rem(2) 0;
-  border-top: 1px solid $green;
+  // border-top: 1px solid $green;
   border-spacing: 0 rem(8);
   font-family: 'Noto Sans JP', sans-serif;
   @include mq(md) {

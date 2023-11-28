@@ -19,8 +19,10 @@
 .voice__reviews {
   margin-bottom: rem(41);
   @include mq(md) {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     // gap: rem(40);
     gap: 3.7%;
     margin-bottom: 0;
