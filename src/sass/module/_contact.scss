@@ -31,13 +31,19 @@
 .contact__logo {
   max-width: rem(294);
   width: 100%;
-  padding:0 rem(60) rem(8) rem(60);
   margin: 0 auto rem(16);
   border-bottom: 1px solid $green;
   @include mq(md) {
-    padding: 0 rem(120) rem(8) rem(120);
     margin: 0 0 rem(24) 0;
     max-width: rem(440);
+  }
+}
+.contact__img {
+  max-width: rem(174);
+  margin: 0 auto rem(6) auto;
+  @include mq(md) {
+    max-width: rem(200);
+    margin-bottom: rem(8);
   }
 }
 .contact__address-wrapper {

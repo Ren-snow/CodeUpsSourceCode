@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.about {
+.about-margin {
   margin-bottom: rem(70);
   @include mq(md) {
     // margin-bottom: rem(98);
