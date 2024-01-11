@@ -1,0 +1,16 @@
+@use "global" as *; 
+
+.reviews__item {
+  margin: 0 auto rem(40);
+  @include mq(md) {
+    margin: 0 auto
+  }
+}
+
+.reviews__item:last-child {
+  margin-bottom: 0;
+}
+
+
+
+

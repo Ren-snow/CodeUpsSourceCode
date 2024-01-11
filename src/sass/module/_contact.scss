@@ -47,7 +47,7 @@
   }
 }
 .contact__address-wrapper {
-  margin-bottom: rem(18);
+  margin-bottom: rem(32);
   @include mq(md) {
     display: flex;
     justify-content: space-between;
@@ -111,16 +111,23 @@
   margin: 0 auto;
 }
 .contact__fish {
+  background-image: url(../images/common/fish1.png);
   position: absolute;
   width: rem(109);
+  height: rem(50);
   top: rem(-26);
   right: rem(15);
+  right: calc(50% - min(48%, 11rem));
+  background-repeat: no-repeat;
+  background-size: contain;
   @include mq(md) {
     width: rem(301);
-    right: calc(50% - min(48%, 40rem));
+    height: rem(138);
+    right: calc(50% - min(48%, 42rem));
     top: rem(-36);
   }
 }
+
 
 
 

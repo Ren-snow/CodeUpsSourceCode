@@ -78,7 +78,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $('.js-header').toggleClass("is-active")
         $('.js-header-top').toggleClass("is-active")
       }
-      $('.js-nav-item').click(function () {
+      $('.js-nav a').click(function () {
         if ($('#js-hamburger').attr('aria-expanded') == 'true') {
           $('#js-hamburger').attr('aria-expanded', false)
           $('body').toggleClass("is-active")

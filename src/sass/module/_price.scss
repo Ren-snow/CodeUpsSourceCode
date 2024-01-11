@@ -52,64 +52,76 @@
 
 
 .price__contents-wrapper {
+  margin-bottom: rem(40);
   @include mq(md) {
     display: flex;
     justify-content: space-between;
     // max-width: rem(1077);
     // gap: 7%;
     width: 100%;
-    margin-bottom: rem(40);
-    
+    margin-bottom: rem(80); 
   }
 }
 .price__contents {
+
   @include mq(md) {
     width: 45.68245%;
     // margin-top: rem(3);
     // margin-left: rem(12);
   }
 }
-.price__table-wrapper {
-  // max-width: rem(492);
-  width: 100%;
-  margin: 0 auto rem(33);
+.price__list {
+  margin-bottom: rem(40);
 }
-.price__table-wrapper.price__table-wrapper--last {
-  margin-bottom: rem(31);
+.price__list:last-child {
+  margin-bottom: 0;
 }
+
 .price__type {
   font-size: rem(16);
   padding-bottom: rem(2);
-  // margin-bottom: rem(2);
+  margin-bottom: rem(8);
   border-bottom: 1px solid $green;
 }
-.price__table {
-  width: 100%;
-  padding: rem(2) 0;
-  // border-top: 1px solid $green;
-  border-spacing: 0 rem(8);
-  font-family: 'Noto Sans JP', sans-serif;
+.price__list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(8);
+  font-size: rem(14);
   @include mq(md) {
-    border-spacing: 0 rem(5.998);
+    font-size: rem(16);
   }
 }
+.price__list-item:last-child {
+  margin-bottom: 0;
+}
+// .price__table {
+//   width: 100%;
+//   padding: rem(2) 0;
+//   // border-top: 1px solid $green;
+//   border-spacing: 0 rem(8);
+//   font-family: 'Noto Sans JP', sans-serif;
+//   @include mq(md) {
+//     border-spacing: 0 rem(5.998);
+//   }
+// }
 
-.price__table-header {
-  font-weight: normal;
-  font-size: rem(14);
-  padding-right: rem(42);
-  text-align: left;
-  @include mq(md) {
-    font-size: rem(16);
-  }
-}
-.price__table-data {
-  font-size: rem(14);
-  text-align: right;
-  @include mq(md) {
-    font-size: rem(16);
-  }
-}
+// .price__table-header {
+//   font-weight: normal;
+//   font-size: rem(14);
+//   padding-right: rem(42);
+//   text-align: left;
+//   @include mq(md) {
+//     font-size: rem(16);
+//   }
+// }
+// .price__table-data {
+//   font-size: rem(14);
+//   text-align: right;
+//   @include mq(md) {
+//     font-size: rem(16);
+//   }
+// }
 
 .price__btn {
   margin: 0 auto;
@@ -118,20 +130,18 @@
 .price__fish {
   display: none;
   @include mq(md) {
+    background-image: url(../images/common/fish1.png);
     display: block;
     width: rem(437);
+    height: rem(201);
     position: absolute;
     bottom: rem(60);
     // left: 6.9444%;
-    left: calc(50% - min(48%, 40rem));
+    left: calc(50% - min(48%, 38.5rem));
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
-
-
-
-
-
-
 
 
 

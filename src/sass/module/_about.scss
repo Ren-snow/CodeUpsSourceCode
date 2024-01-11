@@ -108,11 +108,15 @@
 .about__coral {
   display: none;
   @include mq(md) {
+    background-image: url(../images/common/coral.png);
     display: block;
     position: absolute;
     width: rem(194);
+    height: rem(181);
     bottom: rem(-90);
     right: calc(50% - min(48%, 40rem));
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

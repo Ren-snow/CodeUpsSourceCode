@@ -1,0 +1,13 @@
+@use "global" as *; 
+
+.articles__item  {
+  margin: 0 auto rem(40);
+  @include mq(md) {
+    margin: 0 auto;
+  }
+}
+
+.articles__item:last-child {
+  margin-bottom: 0;
+}
+

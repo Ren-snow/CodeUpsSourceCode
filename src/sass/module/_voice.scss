@@ -30,17 +30,6 @@
   }
 }
 
-.voice__review {
-  // margin: 0 auto rem(40) auto;
-  margin: 0 auto rem(40);
-  @include mq(md) {
-    margin: 0 auto
-  }
-}
-// .voice__review.voice__review--second {
-//   margin-bottom: 0;
-// }
-
 .voice__btn {
   margin: 0 auto;
 }
@@ -48,23 +37,31 @@
 .voice__fish {
   display: none;
   @include mq(md) {
+    background-image: url(../images/common/fish2.png);
     display: block;
     position: absolute;
     top: rem(-110);
     // left: 6.9444%;
-    left: calc(50% - min(48%, 40rem));
+    left: calc(50% - min(48%, 38.5rem));
     width: rem(301);
+    height: rem(138);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 .voice__seahorse {
   display: none;
   @include mq(md) {
+    background-image: url(../images/common/seahorse.png);
     display: block;
     position: absolute;
     bottom: rem(-68);
     // right: 12.5%;
-    right: calc(50% - min(48%, 40rem));
+    right: calc(50% - min(48%, 33.5rem));
     width: rem(71);
+    height: rem(162);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

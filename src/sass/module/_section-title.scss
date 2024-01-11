@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .section-title {
-  font-weight: normal;
   text-align: center;
   font-size: rem(32);
   color: $font;
@@ -9,45 +8,50 @@
     font-size: rem(40);
   }
 }
-.section-title::first-letter {
+.section-title__en::first-letter {
   color: $green;
 }
 
-.section-title__sub {
+
+.section-title__ja {
   display: block;
   color: $green;
+  font-weight: normal;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: rem(12);
 }
 
 
-
+// contact
 .section-title.section-title--big {
   font-size: rem(80);
 }
-.section-title__sub--contact {
-  margin-top: rem(-24);
+.section-title--big .section-title__en {
+  line-height: 1;
 }
-.section-title--white {
+
+// blog
+.section-title__ja--white,
+.section-title__en--white {
   @include mq(md) {
     color: #fff;
   }
 }
-.section-title--white::first-letter {
+.section-title__en--white::first-letter {
   @include mq(md) {
     color: #fff;
   }
 }
-.section-title--white .section-title__first-letter {
-  @include mq(md) {
-    color: #fff;
-  }
-}
-.section-title--white .section-title__sub {
-  @include mq(md) {
-    color: #fff;
-  }
-}
+// .section-title--white .section-title__first-letter {
+//   @include mq(md) {
+//     color: #fff;
+//   }
+// }
+// .section-title--white .section-title__sub {
+//   @include mq(md) {
+//     color: #fff;
+//   }
+// }
 
 
 

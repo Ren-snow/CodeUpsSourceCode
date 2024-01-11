@@ -70,7 +70,8 @@
 }
 .card__body {
   // padding: rem(12) rem(18) 0;
-  padding: 0 rem(8);
+  // padding: 0 rem(8);
+  padding-left: rem(19);
   // @include mq(md) {
   //   padding-top: rem(18);
   // }
@@ -85,8 +86,9 @@
 }
 .card__price {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   font-family: 'Lato', sans-serif;
+  gap: rem(24);
   font-weight: 700;
   align-items: center;
 }

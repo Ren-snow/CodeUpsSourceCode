@@ -44,6 +44,7 @@
 }
 .blog__articles {
   margin-bottom: rem(38);
+  
   @include mq(md) {
     // display: flex;
     display: grid;
@@ -73,12 +74,16 @@
 .blog__fish {
   display: none;
   @include mq(md) {
+    background-image: url(../images/common/fish1-white.png);
     display: block;
     position: absolute;
     top: rem(24);
-    left: 6.94444%;
-    left: calc(50% - min(48%, 40rem));
+    // left: 6.94444%;
+    left: calc(50% - min(48%, 38.5rem));
     width: rem(437);
+    height: rem(201);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

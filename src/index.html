@@ -23,9 +23,13 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    
     <header class="header js-header loader-fade-in" id="js-header">
       <div class="header__top js-header-top">
         <h1 class="header__logo">
@@ -97,7 +101,7 @@
         <nav class="header__nav js-nav">
           <div class="header__nav-half">
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -106,18 +110,18 @@
                   >キャンペーン</a
                 >
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">ライセンス取得</a>
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">貸切体験ダイビング</a>
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">ナイトダイビング</a>
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -128,7 +132,7 @@
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -137,18 +141,18 @@
                   >ダイビング情報</a
                 >
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">ライセンス講習</a>
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">体験ダイビング</a>
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">ファンダイビング</a>
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -161,7 +165,7 @@
           </div>
           <div class="header__nav-half">
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -172,7 +176,7 @@
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -181,18 +185,18 @@
                   >料金一覧</a
                 >
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">ライセンス講習</a>
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">体験ダイビング</a>
               </li>
-              <li class="header__sub-item js-nav-item">
+              <li class="header__sub-item">
                 <a href="#">ファンダイビング</a>
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -203,7 +207,7 @@
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -214,7 +218,7 @@
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -225,7 +229,7 @@
               </li>
             </ul>
             <ul class="header__item-wrapper">
-              <li class="header__item js-nav-item">
+              <li class="header__item">
                 <a href="#"
                   ><span class="header__starfish"
                     ><img
@@ -242,27 +246,66 @@
     <main>
       <div class="fv fv-margin">
         <div class="fv__wrapper slide">
-          <div class="slide__image"></div>
-          <div class="slide__image"></div>
-          <div class="slide__image"></div>
-          <div class="slide__image"></div>
+          <div class="slide__bg">
+            <img
+              class="slide__image u-mobile"
+              src="./assets/images/common/fv1-sp.webp"
+              alt="Turtle"
+            />
+            <img
+              class="slide__image u-desktop"
+              src="./assets/images/common/fv1.webp"
+              alt="Turtle"
+            />
+          </div>
+          <div class="slide__bg">
+            <img
+              class="slide__image u-mobile"
+              src="./assets/images/common/fv2-sp.webp"
+              alt="Turtle"
+            />
+            <img
+              class="slide__image u-desktop"
+              src="./assets/images/common/fv2.webp"
+              alt="Turtle"
+            />
+          </div>
+          <div class="slide__bg">
+            <img
+              class="slide__image u-mobile"
+              src="./assets/images/common/fv3-sp.webp"
+              alt="Turtle"
+            />
+            <img
+              class="slide__image u-desktop"
+              src="./assets/images/common/fv3.webp"
+              alt="Turtle"
+            />
+          </div>
+          <div class="slide__bg">
+            <img
+              class="slide__image u-mobile"
+              src="./assets/images/common/fv4-sp.webp"
+              alt="Turtle"
+            />
+            <img
+              class="slide__image u-desktop"
+              src="./assets/images/common/fv4.webp"
+              alt="Turtle"
+            />
+          </div>
         </div>
-        <div class="fv__title loader-fade-in">
-          <!-- <img
-            src="./assets/images/common/DIVING.svg"
-            alt="DIVING"
-            class="fv__main-title"
-          /> -->
+        <div class="fv__title">
           <h2 class="fv__main-title">DIVING</h2>
           <p class="fv__sub-title">into the ocean</p>
         </div>
       </div>
       <section class="campaign campaign-margin">
         <div class="campaign__inner inner">
-          <h2 class="campaign__title section-title en">
-            Campaign
-            <span class="section-title__sub">キャンペーン</span>
-          </h2>
+          <div class="section-title campaign__title">
+            <p class="section-title__en en">Campaign</p>
+            <h2 class="section-title__ja">キャンペーン</h2>
+          </div>
           <div class="swiper-button-prev">
             <div class="swiper-button-prev__arrow-wrapper">
               <span class="swiper-button-prev__arrow"></span
@@ -279,16 +322,15 @@
             <div class="swiper-wrapper campaign__cards cards">
               <!-- Slides -->
 
-              <a href="#" class="swiper-slide cards__item card campaign__card">
-                <div class="card__aside">
-                  <div class="card__figure">
-                    <img
-                      src="./assets/images/common/campaign1.jpg"
-                      alt="ライセンス取得画像"
-                      class="card__img"
-                    />
-                  </div>
+              <a href="#" class="swiper-slide cards__item card">
+                <div class="card__figure">
+                  <img
+                    src="./assets/images/common/campaign1.jpg"
+                    alt="ライセンス取得画像"
+                    class="card__img"
+                  />
                 </div>
+
                 <div class="card__main">
                   <div class="card__header">
                     <div class="card__type">ライセンス講習</div>
@@ -303,16 +345,15 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="swiper-slide cards__item card campaign__card">
-                <div class="card__aside">
-                  <div class="card__figure">
-                    <img
-                      src="./assets/images/common/campaign2.jpg"
-                      alt="ライセンス取得画像"
-                      class="card__img"
-                    />
-                  </div>
+              <a href="#" class="swiper-slide cards__item card">
+                <div class="card__figure">
+                  <img
+                    src="./assets/images/common/campaign2.jpg"
+                    alt="ライセンス取得画像"
+                    class="card__img"
+                  />
                 </div>
+
                 <div class="card__main">
                   <div class="card__header">
                     <div class="card__type">体験ダイビング</div>
@@ -327,16 +368,15 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="swiper-slide cards__item card campaign__card">
-                <div class="card__aside">
-                  <div class="card__figure">
-                    <img
-                      src="./assets/images/common/campaign3.jpg"
-                      alt="ライセンス取得画像"
-                      class="card__img"
-                    />
-                  </div>
+              <a href="#" class="swiper-slide cards__item card">
+                <div class="card__figure">
+                  <img
+                    src="./assets/images/common/campaign3.jpg"
+                    alt="ライセンス取得画像"
+                    class="card__img"
+                  />
                 </div>
+
                 <div class="card__main">
                   <div class="card__header">
                     <div class="card__type">体験ダイビング</div>
@@ -351,16 +391,15 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="swiper-slide cards__item card campaign__card">
-                <div class="card__aside">
-                  <div class="card__figure">
-                    <img
-                      src="./assets/images/common/campaign4.jpg"
-                      alt="ライセンス取得画像"
-                      class="card__img"
-                    />
-                  </div>
+              <a href="#" class="swiper-slide cards__item card">
+                <div class="card__figure">
+                  <img
+                    src="./assets/images/common/campaign4.jpg"
+                    alt="ライセンス取得画像"
+                    class="card__img"
+                  />
                 </div>
+
                 <div class="card__main">
                   <div class="card__header">
                     <div class="card__type">ファンダイビング</div>
@@ -381,26 +420,23 @@
             <a href="#" class="campaign__btn btn en"
               ><p class="btn__text">View more</p>
               <span class="btn__arrow"></span>
-              <span class="btn__hover-bg"></span>
-          </a>
-          </div> -->
-          <div class="campaign__btn-wrapper btn-wrapper">
-            <a href="#" class="campaign__btn btn en"
-              ><p class="btn__text">View more</p>
-              <span class="btn__arrow"></span>
               <div class="btn__sub"></div>
               <span class="btn__hover-bg"></span>
             </a>
-          
+          </div> -->
+          <div class="campaign__btn-wrapper btn-wrapper">
+            <a href="#" class="btn-wrapper__item btn en">
+              <span> View more </span>
+            </a>
           </div>
         </div>
       </section>
       <section class="about about-margin">
         <div class="inner about__inner">
-          <h2 class="section-title about__title en">
-            About us
-            <span class="section-title__sub">私たちについて</span>
-          </h2>
+          <div class="section-title about__title">
+            <p class="section-title__en en">About us</p>
+            <h2 class="section-title__ja">私たちについて</h2>
+          </div>
           <div class="about__img-wrapper">
             <picture class="about__shisa-img">
               <img
@@ -437,29 +473,22 @@
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
               </p>
-              <div class="campaign__btn-wrapper btn-wrapper">
-                <a href="#" class="campaign__btn btn en"
-                  ><p class="btn__text">View more</p>
-                  <span class="btn__arrow"></span>
-                  <div class="btn__sub"></div>
-                  <span class="btn__hover-bg"></span>
+              <div class="about__btn-wrapper btn-wrapper">
+                <a href="#" class="btn-wrapper__item btn en">
+                  <span> View more </span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/images/common/coral.png"
-          alt="Coral"
-          class="about__coral"
-        />
+        <div class="about__coral"></div>
       </section>
       <section class="info">
         <div class="info__inner inner">
-          <h2 class="section-title info__title en">
-            Information
-            <span class="section-title__sub">ダイビング情報</span>
-          </h2>
+          <div class="section-title info__title">
+            <p class="section-title__en en">Information</p>
+            <h2 class="section-title__ja">ダイビング情報</h2>
+          </div>
           <div class="info__contents">
             <div class="info__figure js-img-wrapper">
               <img
@@ -474,14 +503,9 @@
                 当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />
                 正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
               </p>
-              <div class="campaign__btn-wrapper btn-wrapper">
-                <a href="#" class="campaign__btn btn en"
-                  >
-                  <span class="btn__hover-bg"></span>
-                  <div class="btn__text">View more</div>
-                  <span class="btn__arrow"></span>
-                  <div class="btn__sub"></div>
-                  
+              <div class="info__btn-wrapper btn-wrapper">
+                <a href="#" class="btn-wrapper__item btn en">
+                  <span> View more </span>
                 </a>
               </div>
             </div>
@@ -490,21 +514,20 @@
       </section>
       <section class="blog blog-margin">
         <div class="blog__inner inner">
-          <h2 class="section-title section-title--white blog__title en">
-            Blog
-            <span class="section-title__sub">ブログ</span>
-          </h2>
-          <div class="blog__articles">
-            <a href="#" class="blog__article article">
-              <aside class="article__aside">
-                <figure class="article__figure">
-                  <img
-                    src="./assets/images/common/blog1.jpg"
-                    alt="blog image"
-                    class="article__image"
-                  />
-                </figure>
-              </aside>
+          <div class="section-title blog__title">
+            <p class="section-title__en en section-title__en--white">Blog</p>
+            <h2 class="section-title__ja section-title__ja--white">ブログ</h2>
+          </div>
+          <div class="blog__articles articles">
+            <a href="#" class="articles__item article">
+              <div class="article__figure">
+                <img
+                  src="./assets/images/common/blog1.jpg"
+                  alt="blog image"
+                  class="article__image"
+                />
+              </div>
+
               <div class="article__header">
                 <p class="article__date">2023.11/17</p>
                 <h3 class="article__title">ライセンス取得</h3>
@@ -516,16 +539,15 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="blog__article article">
-              <aside class="article__aside">
-                <figure class="article__figure">
-                  <img
-                    src="./assets/images/common/blog2.jpg"
-                    alt="blog image"
-                    class="article__image"
-                  />
-                </figure>
-              </aside>
+            <a href="#" class="articles__item article">
+              <div class="article__figure">
+                <img
+                  src="./assets/images/common/blog2.jpg"
+                  alt="blog image"
+                  class="article__image"
+                />
+              </div>
+
               <div class="article__header">
                 <p class="article__date">2023.11/17</p>
                 <h3 class="article__title">ウミガメと泳ぐ</h3>
@@ -537,16 +559,15 @@
                 </p>
               </div>
             </a>
-            <a href="#" class="blog__article article">
-              <aside class="article__aside">
-                <figure class="article__figure">
-                  <img
-                    src="./assets/images/common/blog3.jpg"
-                    alt="blog image"
-                    class="article__image"
-                  />
-                </figure>
-              </aside>
+            <a href="#" class="articles__item article">
+              <div class="article__figure">
+                <img
+                  src="./assets/images/common/blog3.jpg"
+                  alt="blog image"
+                  class="article__image"
+                />
+              </div>
+
               <div class="article__header">
                 <p class="article__date">2023.11/17</p>
                 <h3 class="article__title">カクレクマノミ</h3>
@@ -560,30 +581,22 @@
             </a>
           </div>
           <div class="blog__btn-wrapper btn-wrapper">
-            <a href="#" class="campaign__btn btn en"
-                  >
-                  <span class="btn__hover-bg"></span>
-                  <div class="btn__text">View more</div>
-                  <span class="btn__arrow"></span>
-                  <div class="btn__sub"></div>
-                  
-                </a>
+            <a href="#" class="btn-wrapper__item btn en">
+              <span> View more </span>
+            </a>
           </div>
         </div>
-        <img
-          src="./assets/images/common/fish1-white.png"
-          alt="fish"
-          class="blog__fish"
-        />
+        <div class="blog__fish">
+        </div>
       </section>
       <section class="voice voice-margin">
         <div class="voice__inner inner">
-          <h2 class="section-title voice__title en">
-            Voice
-            <span class="section-title__sub">お客様の声</span>
-          </h2>
-          <div class="voice__reviews">
-            <div class="voice__review review">
+          <div class="section-title voice__title">
+            <p class="section-title__en en">Voice</p>
+            <h2 class="section-title__ja">お客様の声</h2>
+          </div>
+          <div class="voice__reviews reviews">
+            <div class="reviews__item review">
               <div class="review__header">
                 <div class="review__info">
                   <div class="review__age-type">
@@ -610,7 +623,7 @@
                 </p>
               </div>
             </div>
-            <div class="voice__review review">
+            <div class="reviews__item review">
               <div class="review__header">
                 <div class="review__info">
                   <div class="review__age-type">
@@ -639,33 +652,22 @@
             </div>
           </div>
           <div class="voice__btn-wrapper btn-wrapper">
-            <a href="#" class="campaign__btn btn en"
-                  >
-                  <span class="btn__hover-bg"></span>
-                  <div class="btn__text">View more</div>
-                  <span class="btn__arrow"></span>
-                  <div class="btn__sub"></div>
-                  
-                </a>
+            <a href="#" class="btn-wrapper__item btn en">
+              <span> View more </span>
+            </a>
           </div>
         </div>
-        <img
-          src="./assets/images/common/fish2.png"
-          alt="Fish"
-          class="voice__fish"
-        />
-        <img
-          src="./assets/images/common/seahorse.png"
-          alt="Seahorse"
-          class="voice__seahorse"
-        />
+        <div class="voice__fish"></div>
+        
+        <div class="voice__seahorse"></div>
+        
       </section>
       <section class="price price-margin">
         <div class="price__inner inner">
-          <h2 class="section-title price__title en">
-            Price
-            <span class="section-title__sub">料金一覧</span>
-          </h2>
+          <div class="section-title price__title">
+            <p class="section-title__en en">Price</p>
+            <h2 class="section-title__ja">料金一覧</h2>
+          </div>
           <div class="price__figure u-mobile">
             <img
               src="./assets/images/common/price-mobile.jpg"
@@ -674,100 +676,81 @@
             />
           </div>
           <div class="price__contents-wrapper">
-            <div class="price__contents">
-              <div class="price__table-wrapper">
+            <ul class="price__contents">
+              <li class="price__list">
                 <h3 class="price__type">ライセンス講習</h3>
-                <table class="price__table">
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      オープンウォーターダイバーコース
-                    </th>
-                    <td class="price__table-data">¥50,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      アドバンスドオープンウォーターコース
-                    </th>
-                    <td class="price__table-data">¥60,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">レスキュー＋EFRコース</th>
-                    <td class="price__table-data">¥70,000</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="price__table-wrapper">
+
+                <dl class="price__list-item">
+                  <dt class="price__item-name">
+                    オープンウォーターダイバーコース
+                  </dt>
+                  <dd class="price__item-data">¥50,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">
+                    アドバンスドオープンウォーターコース
+                  </dt>
+                  <dd class="price__item-data">¥60,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">レスキュー＋EFRコース</dt>
+                  <dd class="price__item-data">¥70,000</dd>
+                </dl>
+              </li>
+              <li class="price__list">
                 <h3 class="price__type">体験ダイビング</h3>
-                <table class="price__table">
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ビーチ体験ダイビング(半日)
-                    </th>
-                    <td class="price__table-data">¥7,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ビーチ体験ダイビング(1日)
-                    </th>
-                    <td class="price__table-data">¥14,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ボート体験ダイビング(半日)
-                    </th>
-                    <td class="price__table-data">¥10,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ボート体験ダイビング(1日)
-                    </th>
-                    <td class="price__table-data">¥18,000</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="price__table-wrapper">
+
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ビーチ体験ダイビング(半日)</dt>
+                  <dd class="price__item-data">¥7,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ビーチ体験ダイビング(1日)</dt>
+                  <dd class="price__item-data">¥14,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ボート体験ダイビング(半日)</dt>
+                  <dd class="price__item-data">¥10,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ボート体験ダイビング(1日)</dt>
+                  <dd class="price__item-data">¥18,000</dd>
+                </dl>
+              </li>
+              <li class="price__list">
                 <h3 class="price__type">ファンダイビング</h3>
-                <table class="price__table">
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ビーチダイビング(2ダイブ)
-                    </th>
-                    <td class="price__table-data">¥14,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ボートダイビング(2ダイブ)
-                    </th>
-                    <td class="price__table-data">¥18,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      スペシャルダイビング(2ダイブ)
-                    </th>
-                    <td class="price__table-data">¥24,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">
-                      ナイトダイビング(1ダイブ)
-                    </th>
-                    <td class="price__table-data">¥10,000</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="price__table-wrapper price__table-wrapper--last">
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ビーチダイビング(2ダイブ)</dt>
+                  <dd class="price__item-data">¥14,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ボートダイビング(2ダイブ)</dt>
+                  <dd class="price__item-data">¥18,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">
+                    スペシャルダイビング(2ダイブ)
+                  </dt>
+                  <dd class="price__item-data">¥24,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">ナイトダイビング(1ダイブ)</dt>
+                  <dd class="price__item-data">¥10,000</dd>
+                </dl>
+              </li>
+              <li class="price__list">
                 <h3 class="price__type">スペシャルダイビング</h3>
-                <table class="price__table">
-                  <tr class="price__table-row">
-                    <th class="price__table-header">貸切ダイビング(2ダイブ)</th>
-                    <td class="price__table-data">¥24,000</td>
-                  </tr>
-                  <tr class="price__table-row">
-                    <th class="price__table-header">1日ダイビング(3ダイブ)</th>
-                    <td class="price__table-data">¥32,000</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
+
+                <dl class="price__list-item">
+                  <dt class="price__item-name">貸切ダイビング(2ダイブ)</dt>
+                  <dd class="price__item-data">¥24,000</dd>
+                </dl>
+                <dl class="price__list-item">
+                  <dt class="price__item-name">1日ダイビング(3ダイブ)</dt>
+                  <dd class="price__item-data">¥32,000</dd>
+                </dl>
+              </li>
+            </ul>
             <div class="price__figure u-desktop">
               <img
                 src="./assets/images/common/price1.jpg"
@@ -777,14 +760,9 @@
             </div>
           </div>
           <div class="price__btn-wrapper btn-wrapper">
-            <a href="#" class="campaign__btn btn en"
-                  >
-                  <span class="btn__hover-bg"></span>
-                  <div class="btn__text">View more</div>
-                  <span class="btn__arrow"></span>
-                  <div class="btn__sub"></div>
-                  
-                </a>
+            <a href="#" class="btn-wrapper__item btn en">
+              <span> View more </span>
+            </a>
           </div>
         </div>
         <img
@@ -792,13 +770,13 @@
           alt="Fish"
           class="price__fish"
         />
+        <div class="price__fish">
+        </div>
       </section>
       <section class="contact contact-margin">
-        <img
-          src="./assets/images/common/fish1.png"
-          alt="fish"
-          class="contact__fish"
-        />
+        
+        
+        </div>
         <div class="contact__inner inner">
           <div class="contact__contents-wrapper">
             <div class="contact__access">
@@ -829,25 +807,20 @@
               </div>
             </div>
             <div class="contact__inquiry">
-              <h2 class="section-title section-title--big contact__title en">
-                <span class="section-title__first-letter">C</span>ontact
-                <span class="section-title__sub section-title__sub--contact"
-                  >お問合せ</span
-                >
-              </h2>
+              <div class="section-title section-title--big contact__title">
+                <p class="section-title__en en">Contact</p>
+                <h2 class="section-title__ja">お問合せ</h2>
+              </div>
               <p class="contact__catch">ご予約・お問い合わせはコチラ</p>
               <div class="contact__btn-wrapper btn-wrapper">
-                <a href="#" class="campaign__btn btn en"
-                  >
-                  <span class="btn__hover-bg"></span>
-                  <div class="btn__text">Contact us</div>
-                  <span class="btn__arrow"></span>
-                  <div class="btn__sub"></div>
-                  
+                <a href="#" class="btn-wrapper__item btn en">
+                  <span>Contact us</span>
                 </a>
               </div>
             </div>
           </div>
+        </div>
+        <div class="contact__fish">
         </div>
       </section>
     </main>
@@ -1043,10 +1016,5 @@
         ><span class="pagetop-btn__arrow"></span>
       </div>
     </btn>
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="./assets/js/jquery.inview.min.js"></script>
-    <script defer src="./assets/js/script.js"></script>
   </body>
 </html>

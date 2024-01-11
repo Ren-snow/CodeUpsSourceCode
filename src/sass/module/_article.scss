@@ -15,15 +15,16 @@
     padding-top: rem(16);
   }
 }
-.article__aside {
-  margin-bottom: rem(24);
-}
+// .article__aside {
+//   margin-bottom: rem(24);
+// }
 
 
 .article__figure {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: rem(24);
 }
 .article__figure::before {
   content:"";
