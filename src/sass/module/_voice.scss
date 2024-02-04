@@ -34,7 +34,12 @@
   margin: 0 auto;
 }
 
-.voice__fish {
+.voice__btn-wrapper {
+  text-align: center;
+}
+
+.voice::before {
+  content: '';
   display: none;
   @include mq(md) {
     background-image: url(../images/common/fish2.png);
@@ -49,7 +54,8 @@
     background-size: contain;
   }
 }
-.voice__seahorse {
+.voice::after {
+  content: '';
   display: none;
   @include mq(md) {
     background-image: url(../images/common/seahorse.png);

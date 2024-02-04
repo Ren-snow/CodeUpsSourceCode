@@ -1,28 +1,6 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
   
-    // loader
-    // $(function(){
-    //   $(window).on('load',function(){
-    //     // $('.loader').delay(600).fadeOut(600);
-    //     $('.loader').delay(600).slideUp(400);
-    //     // $('.loader-bg').delay(900).fadeOut(800);
-    //     $('.loader-bg').delay(900).slideUp(400);
-    //     $('.loader-fade-in').delay(1600).fadeIn(800);
-    // });
-    //   setTimeout(function(){
-    //     $('.loader-bg').fadeOut(600);
-    //   },5000);
-    // });
-
-
-
-   
-
-
-
-    // page-top
-    
     $(function(){
       $("#js-pagetop").click(function () {
             $('html, body').animate({
@@ -133,7 +111,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     
     
     // Swiper
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.js-swiper', {
     grabCursor: true,
     spaceBetween: 24,
     freeMode: true,

@@ -5,23 +5,7 @@
   width: 100%;
 	overflow: hidden;
 	position: relative;
-	// z-index: 10;
 }
-
-
-// .slide__image {
-// 	animation: slider-1 32s linear infinite;
-//   // background-size: cover;
-//   // background-position: center;
-//   // background-repeat: no-repeat;
-// 	height: 100%;
-// 	opacity: 0;
-// 	position: absolute;
-// 	right: 0;
-// 	top: 0;
-// 	width: 100%;
-// 	// z-index: 10;
-// }
 
 .slide__bg {
   animation: slider-1 32s linear infinite;
@@ -33,56 +17,24 @@
   height: 100%;
 }
 .slide__image {
-  // position: absolute;
-	// right: 0;
-	// top: 0;
-  // width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-// .slide__image img {
-//   width: 100%;
-//   height: 100%;
-// }
-
-
-
-
-
-
-
-
 
 .slide__bg:nth-child(1) {
 	animation-delay: -2s;
-	// background-image: url(../images/common/fv1-sp.jpg);
-  @include mq(md) {
-    // background-image: url(../images/common/fv1.jpg);
-  }
 }
 
 .slide__bg:nth-child(2) {
 	animation-delay: 6s;
-	// background-image: url(../images/common/fv2-sp.jpg);
-  // @include mq(md) {
-  //   background-image: url(../images/common/fv2.jpg);
-  // }
 }
 
 .slide__bg:nth-child(3) {
 	animation-delay: 14s;
-	// background-image: url(../images/common/fv3-sp.jpg);
-  // @include mq(md) {
-  //   background-image: url(../images/common/fv3.jpg);
-  // }
 }
 .slide__bg:nth-child(4) {
 	animation-delay: 22s;
-	// background-image: url(../images/common/fv4-sp.jpg);
-  // @include mq(md) {
-  //   background-image: url(../images/common/fv4.jpg);
-  // }
 }
 
 @keyframes slider-1 {

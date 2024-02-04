@@ -116,80 +116,81 @@
   padding: rem(24) rem(37) rem(90);
   display: flex;
 }
-.header__item-wrapper {
-  margin-bottom: rem(40);
-}
-.header__item {
-  font-weight: bold;
-  position: relative;
-}
-.header__starfish {
-  left: rem(-22);
-  width: rem(18);
-  position: absolute;
-}
-.header__sub-item {
-  margin-top: rem(24);
-}
+// .header__item-wrapper {
+//   margin-bottom: rem(40);
+// }
+// .header__item {
+//   font-weight: bold;
+//   position: relative;
+// }
+
+// .header__starfish {
+//   left: rem(-22);
+//   width: rem(18);
+//   position: absolute;
+// }
+// .header__sub-item {
+//   margin-top: rem(24);
+// }
 
 
 // For PC
 .header__nav-pc {
   height: inherit;
 }
-.header__list-pc {
-  display: flex;
-  align-items: center;
-  gap: rem(40);
-  height: inherit;
-}
-.header__list-item-pc {
-  height: inherit;
-  color: #fff;
-  font-size: rem(18);
-  text-align: center;
-}
+// .header__list-pc {
+//   display: flex;
+//   align-items: center;
+//   gap: rem(40);
+//   height: inherit;
+// }
+// .header__list-item-pc {
+//   height: inherit;
+//   color: #fff;
+//   font-size: rem(18);
+//   text-align: center;
+// }
 
-.header__list-item-pc a {
+// .header__list-item-pc a {
   
-  @include mq(md)  {
-    height: inherit;
-    // display: block;
-    // padding-top: rem(26);
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+//   @include mq(md)  {
+//     height: inherit;
+//     // display: block;
+//     // padding-top: rem(26);
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+// }
 
-.header__list-item-pc a::after {
-  @include mq(md) {
-    position: absolute;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: rem(1);
-    background: #fff;
-    bottom: rem(18);
-    transform: scale(0, 1);
-    transform-origin: center top; 
-    transition: transform 0.3s;  
-  }
+// .header__list-item-pc a::after {
+//   @include mq(md) {
+//     position: absolute;
+//     left: 0;
+//     content: '';
+//     width: 100%;
+//     height: rem(1);
+//     background: #fff;
+//     bottom: rem(18);
+//     transform: scale(0, 1);
+//     transform-origin: center top; 
+//     transition: transform 0.3s;  
+//   }
   
-}
+// }
   
-.header__list-item-pc a:hover::after {
-  @include mq(md) {
-    transform: scale(1, 1); 
-  }
-}
+// .header__list-item-pc a:hover::after {
+//   @include mq(md) {
+//     transform: scale(1, 1); 
+//   }
+// }
 
-.header__list-item-jpn {
-  display: block;
-  font-size: rem(10);
-}
+// .header__list-item-jpn {
+//   display: block;
+//   font-size: rem(10);
+// }
 
 
 

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+
+.nav-sp__items {
+  margin-bottom: rem(40);
+}
+
+.nav-sp__item {
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-sp__sub-item {
+  margin-top: rem(24);
+}
+
+.nav-sp__starfish {
+  left: rem(-22);
+  width: rem(18);
+  position: absolute;
+}
+
+

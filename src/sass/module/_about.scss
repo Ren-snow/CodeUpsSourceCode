@@ -104,8 +104,12 @@
   margin-right: auto;
   margin-left: auto;
 }
+.about__btn-wrapper {
+  text-align: center;
+}
 
-.about__coral {
+.about::after {
+  content: '';
   display: none;
   @include mq(md) {
     background-image: url(../images/common/coral.png);
@@ -119,16 +123,3 @@
     background-size: contain;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

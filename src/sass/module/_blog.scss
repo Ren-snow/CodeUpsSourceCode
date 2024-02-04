@@ -8,7 +8,7 @@
     position: relative;
   }
 } 
-.blog::after {
+.blog::before {
   @include mq(md) {
     height: rem(500);
     // width: 100vw;
@@ -71,7 +71,12 @@
   margin: 0 auto;
 }
 
-.blog__fish {
+.blog__btn-wrapper {
+  text-align: center;
+}
+
+.blog::after {
+  content: '';
   display: none;
   @include mq(md) {
     background-image: url(../images/common/fish1-white.png);
