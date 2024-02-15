@@ -12,7 +12,10 @@
 
 .footer__inner {
   max-width: rem(600);
-  
+  margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: rem(80);
+  }
 }
 .footer__figure-wrapper {
   margin-bottom: rem(40);
@@ -61,13 +64,12 @@
   background: $green;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto rem(40);
+  margin: 0 auto;
   padding-left: rem(24);
   
   @include mq(md) {
     justify-content: space-between;
     gap: rem(80);
-    margin-bottom: rem(46);
   }
   
 }
