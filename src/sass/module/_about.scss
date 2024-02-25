@@ -10,47 +10,45 @@
 }
 
 .about__title {
-  margin-bottom: rem(26);
+  margin-bottom: rem(50);
   @include mq(md) {
-    margin-bottom: rem(36);
+    margin-bottom: rem(120);
   }
 }
 .about__img-wrapper {
   width: 100%;
   position: relative;
-  margin-top: rem(80);
   margin-bottom: rem(40);
   @include mq(md) {
-    margin-top: rem(120);
     margin-bottom: 0;
   }
 }
+
 .about__shisa-img {
   display: block;
   position: absolute;
-  top: rem(-43);
+  top: rem(-26);
   z-index: 1;
   width: 37.2%;
-  // padding-bottom: 8.490566%;
+  height: 100%;
   @include mq(md) {
-    // margin-left: rem(164);
-    // margin-left: rem(10);
     top: rem(-80);
     width: 36.5%;
+    height: 100%;
   }
 }
 .about__fish-img {
   display: block;
   width: 81.449275%;
+  height: 100%;
   margin-left: auto;
-  // position: absolute;
-  top: rem(26);
-  // top: 20%;
-  right: 0;
+  // top: rem(26);
+  // right: 0;
   z-index: 0;
   @include mq(md) {
     width: 82%;
-    top: rem(80);
+    height: 100%;
+    // top: rem(80);
     // bottom: rem(12);
     // right: 1%;
   }
@@ -64,11 +62,9 @@
     width: 100%;
     position: absolute;
     z-index: 2;
-    top: rem(350);
-    // left: 16%;
-    // left: calc(66% - min(50%, 300rem));
-    left: 50%;
-    left: calc(50% + 70px);
+    top: rem(306);
+    // left: 50%;
+    left: calc(50% + 74px);
     transform: translateX(-50%);
   }
 }

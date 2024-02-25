@@ -35,7 +35,8 @@
   width: rem(6);
   transform: rotate(90deg);
 }
-.pagetop-btn__arrow:nth-child(1) {
+.pagetop-btn__arrow-wrapper::before {
+  content: '';
   height: rem(1);
   width: rem(10);
   position: absolute;
@@ -48,11 +49,11 @@
     left: rem(-19);
   }
 }
-.pagetop-btn__arrow:nth-child(2) {
+.pagetop-btn__arrow-wrapper::after {
+  content: '';
   position: absolute;
   bottom: rem(1);
   left: rem(-10);
-  // transform-origin: right bottom;
   width: rem(28);
   height: rem(1);
   background-color: $green;
@@ -63,11 +64,6 @@
     width: rem(45);
   }
 }
-
-
-
-
-
 
 
 
