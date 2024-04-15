@@ -1,0 +1,83 @@
+@use "global" as *;
+.pagination {
+  text-align: center;
+}
+.nav-links {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(12);
+}
+.pagination .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #fff;
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $green;
+  box-sizing: border-box;
+  color: $green;
+  transition: 0.3s;
+}
+.pagination .page-numbers:hover {
+  background: $green;
+  color: #fff;
+}
+
+.page-numbers.current {
+  background: $green;
+  color: #fff;
+}
+
+.prev.page-numbers {
+  margin-right: rem(28);
+  position: relative;
+}
+.next.page-numbers {
+  margin-left: rem(28);
+  position: relative;
+}
+
+
+.prev.page-numbers::before {
+  position: absolute;
+  content: '';
+  width: rem(10);
+  height: rem(10);
+  border-bottom: 1px $green solid;
+  border-left: 1px $green solid;
+  transform: rotate(45deg);
+  left: rem(15);
+  transition: 0.3s;
+}
+.next.page-numbers::before {
+  position: absolute;
+  content: '';
+  width: rem(10);
+  height: rem(10);
+  border-bottom: 1px $green solid;
+  border-left: 1px $green solid;
+  transform: rotate(225deg);
+  left: rem(11);
+  transition: 0.3s;
+}
+
+.prev.page-numbers:hover::before,
+.next.page-numbers:hover::before {
+  border-color:#fff;
+}
+
+
+
+
+// 
+.page-numbers.u-desktop {
+  display: none;
+  @include mq(md) {
+    display: flex;
+  }
+}

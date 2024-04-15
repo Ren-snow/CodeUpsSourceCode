@@ -66,7 +66,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-left: rem(24);
-  
+
   @include mq(md) {
     justify-content: space-between;
     gap: rem(80);
@@ -74,8 +74,11 @@
   
 }
 .footer__nav-half {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
   @include mq(md) {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: rem(140);
   }
@@ -83,7 +86,8 @@
 }
 .footer__nav-quarter {
   display: grid;
-  gap: rem(34);
+  gap: rem(40);
+  // margin-bottom: rem(34);
 }
 .footer__item-wrapper {
   // margin-bottom: rem(34);

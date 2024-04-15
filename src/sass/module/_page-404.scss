@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.page-404 {
+  background: $green;
+  padding-top: rem(98);
+  padding-bottom: rem(40);
+  position: relative;
+  z-index: 1;
+  @include mq(md) {
+    padding-bottom: rem(148);
+  }
+}
+.page-404__breadcrumb.breadcrumb {
+  color: #fff;
+}
+.page-404__breadcrumb.breadcrumb::after {
+  background-image: none;
+}
+.page-404__wrapper {
+  color: #fff;
+  text-align: center;
+
+}
+.page-404__number {
+  font-family: 'Lato', sans-serif;
+  font-size: rem(80);
+  letter-spacing: 0.5em;
+  line-height: normal;
+  @include mq(md) {
+    font-size: rem(160);
+  }
+}
+
+.page-404__text {
+  margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: rem(80);
+  }
+}
+
+.page-404::before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/common/whale-icon-404.svg);
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1 / 1;
+  width: rem(345);
+  top: rem(90);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(698);
+    left: calc(50% - min(47%, 34rem));
+    transform: translateX(0);
+  }
+}
+

@@ -68,25 +68,20 @@
   font-size: rem(16);
   
 }
-.card__body {
-  // padding: rem(12) rem(18) 0;
-  // padding: 0 rem(8);
-  padding-left: rem(19);
-  // @include mq(md) {
-  //   padding-top: rem(18);
-  // }
-}
+// .card__body {
+//   padding-left: rem(19);
+// }
 .card__price-copy {
   font-size: rem(14);
   text-align: center;
   @include mq(md) {
     font-size: rem(16);
-    // padding-right: rem(16);
   }
 }
 .card__price {
   display: flex;
   // justify-content: space-between;
+  justify-content: center;
   font-family: 'Lato', sans-serif;
   gap: rem(24);
   font-weight: 700;
@@ -123,10 +118,44 @@
 }
 
 
+// 下層ページ
+.card.card--campaign {
+  width: 100%;
+  
+}
 
-
-
-
+.card__main.card__main--campaign {
+  @include mq(md){
+    padding: rem(24) rem(24) rem(40);
+  }
+}
+.card__title.card__title--big {
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+.card__price.card__price--campaign {
+  @include mq(md){
+    margin-bottom: rem(24);
+  }
+}
+.card__text {
+  margin-bottom: rem(32);
+}
+.card__contact-wrapper {
+  text-align: center;
+}
+.card__date {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: $green;
+  margin-bottom: rem(7);
+}
+.card__cnt-text {
+  font-size: rem(14);
+  color: $green;
+  margin-bottom: rem(16);
+}
 
 
 

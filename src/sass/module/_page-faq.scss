@@ -1,0 +1,15 @@
+@use "global" as *; 
+
+.page-faq__inner.inner {
+  max-width: rem(600);
+  @include mq(md) {
+    max-width: rem(750);
+  }
+}
+
+.page-faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  
+}

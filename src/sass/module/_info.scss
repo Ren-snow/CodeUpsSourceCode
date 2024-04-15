@@ -15,9 +15,9 @@
 .info__title {
   margin-bottom: rem(24);
 }
+
 .info__contents {
   @include mq(md) {
-    
     display: flex;
     align-items: center;
   }
@@ -29,8 +29,6 @@
   overflow: hidden;
   margin-bottom: rem(30);
     @include mq(md) {
-      // margin-top: rem(16);
-      // margin-left: rem(8);
       width: 49%;
   }
 }

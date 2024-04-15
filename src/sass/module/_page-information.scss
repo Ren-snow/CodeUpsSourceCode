@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.page-information_inner {
+  max-width: rem(600);
+}
+
+.page-information__tab-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(16);
+  @include mq(md) {
+    margin-bottom: rem(24);
+  }
+}
+

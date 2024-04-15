@@ -2,23 +2,13 @@
 
 .article {
   display: block;
-  // max-width: rem(560);
-  // width: 100%;
   background-color: #fff;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
   padding: rem(18) rem(16) rem(16);
   @include mq(md) {
-    // width: rem(333);
-    // width: 30.833%;
-    // width: 100vw * 0.23125;
-    // width: calc(333vw / 14.4);
     padding-top: rem(16);
   }
 }
-// .article__aside {
-//   margin-bottom: rem(24);
-// }
-
 
 .article__figure {
   position: relative;

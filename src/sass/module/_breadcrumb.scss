@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.breadcrumb {
+  padding: rem(8) 0;
+  font-size: rem(14);
+  position: relative;
+}
+
+.breadcrumb::after {
+  content: '';
+  background-image: url(../images/common/fish2.png);
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(125);
+  height: rem(55);
+  left: rem(16);
+  top: rem(56);
+  @include mq(md) {
+    width: rem(301);
+    height: rem(138);
+    top: rem(108);
+    left: calc(50% - min(48%, 40rem));
+  }
+}
+
+
+

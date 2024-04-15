@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.blog-side {
+  
+  @include mq(md) {
+    width: calc(294px / 1080px * 100%);
+  }
+}
+
+.blog-side__headline {
+  margin-bottom: rem(24);
+  
+}
+
+
+.blog-side__topics {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+}
+
+.blog-side__campaign-cards {
+  margin-bottom: rem(40);
+}
+
+.blog-side__year-lists {
+  color: $green;
+  font-size: rem(24);
+  display: flex;
+  flex-direction: column;
+  gap: rem(4);
+}
+
+// .blog-side__year-list {
+//   padding-left: rem(32);
+// }
+.blog-side__year {
+  position: relative;
+  margin-bottom: rem(4);
+  cursor: pointer;
+  display: inline-block;
+  padding-left: rem(32);
+}
+.blog-side__year::before {
+  position: absolute;
+  content: '';
+  border: rem(12) solid transparent;
+  border-left: rem(18) solid $green;
+  top: 50%;   
+  left: rem(0);
+  transform: translateY(-45%); 
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+// ---accordion active
+.blog-side__year.active::before {
+  left: rem(-10);
+  top: 47%;
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+// --------
+
+.blog-side__month-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: rem(32);
+  gap: rem(4);
+}
+
+
+
+.blog-side__month {
+  padding-left: rem(24);
+  position: relative;
+}
+.blog-side__month a {
+  cursor: pointer;
+}
+.blog-side__month::before {
+  position: absolute;
+  content: '';
+  border: rem(12) solid transparent;
+  border-left: rem(18) solid $green;
+  top: 50%;   
+  left: rem(-4);
+  transform: translateY(-45%);
+  cursor: auto;
+}
+

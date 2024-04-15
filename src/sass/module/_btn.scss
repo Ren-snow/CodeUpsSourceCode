@@ -1,18 +1,5 @@
 @use "global" as *;
 
-// .btn {
-//   background: $green;
-//   padding: rem(16) rem(88) rem(16) rem(40);
-//   box-sizing: content-box;
-//   border: 1px solid $green;
-//   display: inline-flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   position: relative;
-//   transition: 0.1s;
-//   z-index: 1;
-// }
-
 .btn {
   background: $green;
   padding: rem(16) rem(88) rem(16) rem(40);
@@ -55,6 +42,7 @@
   z-index: -1;
 }
 
+
 .btn span {
   position: relative;
 }
@@ -73,6 +61,8 @@
   z-index: 1;
   transition: 0.1s;
 }
+
+
 
 .btn span::after {
   background: #fff;
@@ -100,6 +90,33 @@
   transform: scale(1, 1);
 }
 
+.btn.btn--white span::before,
+.btn.btn--white span::after {
+  background: $green;
+}
+
+
+// ------- 404 --------
+
+.btn.btn--white {
+  background: #fff;
+  color: $green;
+  border: 1px solid #fff;
+}
+.btn.btn--white::before {
+  border: 1px solid #fff;
+}
+.btn.btn--white::after {
+  background: $green;
+}
+
+.btn.btn--white:hover {
+  color: #fff;
+}
+.btn.btn--white:hover span::before,
+.btn.btn--white:hover span::after {
+  background: #fff;
+}
 
 // .btn__text {
 //   box-sizing: border-box; 

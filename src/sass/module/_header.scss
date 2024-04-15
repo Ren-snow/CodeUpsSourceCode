@@ -27,6 +27,12 @@
   }
 }
 
+.header__top a {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+
 .header__top.is-active  {
   background: $green;
 }

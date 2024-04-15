@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.breadcrumb-margin {
+  margin-bottom: rem(52);
+  @include mq(md) {
+    margin-bottom: rem(150);
+  }
+}
+.breadcrumb-margin.breadcrumb-margin--about {
+  @include mq(md) {
+    margin-bottom: rem(258);
+  }
+}

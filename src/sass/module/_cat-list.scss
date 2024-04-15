@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.cat-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-columns: rem(162) rem(162);
+  grid-row-gap: rem(16);
+  column-gap: rem(21);
+  justify-items: center;
+  justify-content: center;
+  @include mq(md){
+    display: flex;
+    justify-content: start;
+    gap: rem(32);
+  }
+}
+
+
+
+
+
+
+
+
+
+

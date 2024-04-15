@@ -1,5 +1,12 @@
 @use "global" as *; 
-
+.reviews {
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.7%;
+    row-gap: rem(80);
+  }
+}
 .reviews__item {
   margin: 0 auto rem(40);
   @include mq(md) {

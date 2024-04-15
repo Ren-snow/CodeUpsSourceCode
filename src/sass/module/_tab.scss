@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.tab {
+ background: #DDF0F1;
+ color: $green;
+ padding: rem(10) rem(16);
+ text-align: center;
+ cursor: pointer;
+ transition: 0.2s;
+ z-index: 2;
+ @include mq(md) {
+  width: auto;
+  padding: rem(26) rem(30) rem(29) rem(102);
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ }
+}
+.tab::before {
+  transition: 0.2s;
+  @include mq(md) {
+    aspect-ratio: 64 /64;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: '';
+    width: rem(64);
+    left: rem(30);
+  }
+}
+.tab.is-active:nth-child(1)::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon1-white.svg);
+  }
+}
+.tab.is-active:nth-child(2)::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon2-white.svg);
+  }
+}
+.tab.is-active:nth-child(3)::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon3-white.svg);
+  }
+}
+.tab:nth-child(1)::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon1-green.svg);
+  }
+}
+.tab:nth-child(2)::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon2-green.svg);
+  }
+}
+.tab:nth-child(3)::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon3-green.svg);
+  }
+}
+
+.page-information__tab {
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.tab.is-active {
+  color: #fff;
+  background: $green;
+}
+.tab__icon {
+  @include mq(md) {
+    width: rem(64);
+    height: rem(64);
+  }
+}
+
+

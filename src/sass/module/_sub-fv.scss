@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.sub-fv {
+  height: rem(460);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  @include mq(md){
+    height: rem(548);
+  }
+}
+.sub-fv__img {
+  height: inherit;
+  width: 100%;
+  // display: block;
+}
+.sub-fv__img img {
+  object-fit: cover;
+  height: inherit;
+  width: 100%;
+}
+.sub-fv__title {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: rem(40);
+  font-weight: $regular;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, 0);
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+
+
+

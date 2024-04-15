@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.page-contact__inner.inner {
+  max-width: rem(600);
+  @include mq(md) {
+    max-width: rem(750);
+  }
+}
+
+.page-contact__sent-head,
+.page-contact__sent-text {
+  text-align: center;
+}
+.page-contact__sent-head {
+  margin-bottom: rem(40);
+}
+

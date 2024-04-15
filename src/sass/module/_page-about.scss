@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.page-about__inner {
+  max-width: rem(600);
+  @include mq(md) {
+    max-width: none;
+  }
+}
+.page-about__inner .about__img-wrapper {
+  margin-bottom: 0;
+}
+
+.page-about__modal {
+  display: none;
+  @include mq(md) {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(32, 32, 32, 0.80);
+  z-index: 998;
+  }
+}
+
+.page-about__modal .page-about__modal-picture {
+  @include mq(md)  {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    max-height: 100vh;
+    max-width: calc(920px / 1440px * 100%);
+    width: 100%;
+    height: 80%;
+    z-index: 999;
+  }
+}
+
+.page-about__modal source,
+.page-about__modal img {
+  @include mq(md) {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.category-headline {
+  width: 100%;
+  font-weight: normal;
+  font-size: rem(24);
+  padding: rem(9) rem(82) rem(6);
+  padding-right: 0;
+  border-left: rem(8) $green solid;
+  position: relative;
+}
+
+.category-headline::before {
+  content: '';
+  position: absolute;
+  width: rem(50);
+  aspect-ratio: 50 / 50;
+  left: rem(24);
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../images/common/whale-icon-dgreen.svg);
+}
+

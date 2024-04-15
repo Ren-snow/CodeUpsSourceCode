@@ -1,0 +1,229 @@
+@use "global" as *;
+
+
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   gap: rem(24);
+// }
+.form__contact-contents {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  margin-bottom: rem(40);
+}
+.form__item {
+  padding-bottom: rem(24);
+  border-bottom: 1px dashed $green;
+  @include mq(md) {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+
+.form__item.form__item--center {
+  @include mq(md) {
+    align-items: center;
+  }
+}
+
+.form__label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  margin-bottom: rem(16);
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}
+
+.form__required {
+  text-align: center;
+  font-size: rem(12);
+  background: #C94800;
+  letter-spacing: 0.4em;
+  text-indent:0.4em;
+  color: #fff;
+  padding: rem(2) rem(16);
+  // padding-right: calc(rem(16) - 0.4em);
+  font-weight: normal;
+}
+
+.form__input-wrapper {
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+.form__input {
+  border: 1px solid $green;
+  width: 100%;
+  padding: rem(8) rem(16) rem(9);
+}
+
+.form__input::placeholder {
+  color: #DDF0F1;
+}
+
+.form__checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(4);
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+
+.form__checkbox {
+  cursor: pointer;
+  display: block;
+  
+}
+.form__checkbox-text {
+  padding-left: rem(22);
+  position: relative;
+  display: block;
+}
+.form__checkbox-text::before {
+  position: absolute;
+  content: '';
+  width: rem(14);
+  aspect-ratio: 1 / 1;
+  border: 1px solid $green;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.form__checkbox-text::after {
+  position: absolute;
+  content: '';
+  width: rem(10);
+  height: rem(6);
+  border-left: solid 2px #C94800;
+  border-bottom: solid 2px #C94800;
+  top: 47%;
+  transform: translateY(-50%) rotate(-40deg);
+  left: rem(2);
+  opacity: 0;
+}
+
+// -------------- selected --------------
+input[type=checkbox]:checked + .form__checkbox-text::after {
+  opacity: 1;
+}
+// --------------------------
+
+
+.form__select-wrapper {
+  position: relative;
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+.form__select-wrapper::after {
+  position: absolute;
+  content: '';
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: $green;
+  width: rem(12);
+  height: rem(8);
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(8);
+}
+
+.form__select {
+  border: $green 1px solid;
+  width: 100%;
+  padding: rem(12) rem(8);
+  font-size: rem(12);
+  @include mq(md) {
+    padding: rem(8);
+  }
+}
+
+.form__textarea-wrapper {
+  width: 100%;
+  height: rem(200);
+  @include mq(md) {
+    width: rem(480);
+  }
+}
+.form__textarea {
+  border: 1px solid $green;
+  width: 100%;
+  height: 100%;
+  font-size: rem(12);
+  padding: rem(12) rem(8);
+}
+
+.form__item.form__item--agreement {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: rem(24);
+  justify-content: center;
+}
+
+
+.form__item--agreement .form__checkbox-wrapper {
+  padding: 0 rem(32);
+  @include mq(md) {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.form__checkbox-text.form__checkbox-text--agreement {
+  font-size: rem(14);
+  padding-left: rem(30);
+}
+.form__checkbox-text.form__checkbox-text--agreement::after {
+  left: rem(5.5);
+}
+.form__checkbox-text--agreement::before {
+  top: 0;
+  left: 0;
+  width: rem(22);
+  transform: translateY(0);
+}
+
+.form__btn-wrapper {
+  text-align: center;
+}
+.form__btn-wrapper .btn {
+  padding: rem(16) rem(112) rem(16) rem(56);
+}
+
+.form__btn-wrapper .btn span::before {
+  right: rem(-56);
+}
+.form__btn-wrapper .btn span::after {
+  right: rem(-56);
+}
+
+
+// -----入力漏れ-------------
+.form__error-msg {
+  display: none;
+  font-size: rem(14);
+  color: #C94800;
+  margin-bottom: rem(40);
+}
+
+.form__error-msg.error {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.form__input.error {
+  border: 1px solid #C94800;
+  background: rgb(201, 72, 0, 0.2);
+}
+.form__input.error::placeholder {
+  color: #fff;
+}
+
+// ------------------------

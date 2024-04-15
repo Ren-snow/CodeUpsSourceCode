@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>CodeUps</title>
+    <meta name="description" content="CodeUpsの架空Webサイトです。" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header js-header loader-fade-in">
+      <div class="header__top js-header-top">
+        <a href="./index.html">
+          <h1 class="header__logo">
+            <img
+              src="./assets/images/common/CodeUps-noShadow.svg"
+              alt="CodeUps"
+              class="header__logo-img"
+            />
+          </h1>
+        </a>
+        <button
+          type="button"
+          id="js-hamburger"
+          class="header__hamburger hamburger button"
+          aria-expanded="false"
+          aria-label="メニューを開閉する"
+        >
+          <span class="hamburger__line"></span>
+        </button>
+        <nav class="header__nav-pc nav-pc u-desktop">
+          <ul class="nav-pc__items">
+            <li class="nav-pc__item">
+              <a href="./campaign.html">
+                Campaign
+                <span class="nav-pc__item-jpn">キャンペーン</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./about.html">
+                About us
+                <span class="nav-pc__item-jpn">私たちについて</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./information.html">
+                Information
+                <span class="nav-pc__item-jpn">ダイビング情報</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./blog.html">
+                Blog <span class="nav-pc__item-jpn">ブログ</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./voice.html">
+                Voice <span class="nav-pc__item-jpn">お客様の声</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./price.html">
+                Price <span class="nav-pc__item-jpn">料金一覧</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./faq.html">
+                FAQ <span class="nav-pc__item-jpn">よくある質問</span></a
+              >
+            </li>
+            <li class="nav-pc__item">
+              <a href="./contact.html">
+                Contact <span class="nav-pc__item-jpn">お問合せ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav nav-sp js-nav">
+          <div class="header__nav-half nav-sp__container">
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./campaign.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >キャンペーン</a
+                >
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./campaign.html">ライセンス取得</a>
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./campaign.html">貸切体験ダイビング</a>
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./campaign.html">ナイトダイビング</a>
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./about.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >私たちについて</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./information.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >ダイビング情報</a
+                >
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./information.html">ライセンス講習</a>
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./information.html">体験ダイビング</a>
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./information.html">ファンダイビング</a>
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./blog.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >ブログ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="header__nav-half">
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./voice.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >お客様の声</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./price.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >料金一覧</a
+                >
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./price.html">ライセンス講習</a>
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./price.html">体験ダイビング</a>
+              </li>
+              <li class="nav-sp__sub-item">
+                <a href="./price.html">ファンダイビング</a>
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./faq.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >よくある質問</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./privacy.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >プライバシー<br class="u-mobile" />ポリシー</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./terms.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >利用規約</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-sp__items">
+              <li class="nav-sp__item">
+                <a href="./contact.html"
+                  ><span class="nav-sp__starfish"
+                    ><img
+                      src="./assets/images/common/starfish.png"
+                      alt="ヒトデ" /></span
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- 下層ページのメインビュー -->
+      <div class="sub-fv">
+        <picture class="sub-fv__img">
+          <source
+            srcset="./assets/images/common/contact-fv.jpg"
+            media="(min-width:768px)"
+          />
+          <img
+            src="./assets/images/common/contact-fv-sp.jpg"
+            alt="黄色の魚二匹"
+          />
+        </picture>
+        <h2 class="sub-fv__title">Contact</h2>
+      </div>
+      <!-- パンくず -->
+      <div class="breadcrumb breadcrumb-margin">
+        <div class="breadcrumb__inner inner">
+          <div>TOP > お問い合わせ > お問い合わせエラー</div>
+        </div>
+      </div>
+      <!-- form sent msg -->
+      <section class="page-contact page-contact-margin">
+        <div class="inner">
+          <div class="page-contact__sent-wrapper">
+            <p class="page-contact__sent-head">
+              お問い合わせ内容を送信完了しました。
+            </p>
+            <p class="page-contact__sent-text">
+              このたびは、お問い合わせ頂き<br class="u-mobile"/>誠にありがとうございます。<br />
+              お送り頂きました内容を確認の上、<br class="u-mobile"/>3営業日以内に折り返しご連絡させて頂きます。<br />
+              また、ご記入頂いたメールアドレスへ、<br class="u-mobile"/>自動返信の確認メールをお送りしております。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="js-footer">
+      <div class="footer__inner inner">
+        <div class="footer__figure-wrapper">
+          <a href="./index.html" class="footer__logo-wrapper">
+            <img
+              src="./assets/images/common/CodeUps-noShadow.svg"
+              alt="CodeUps"
+              class="footer__logo"
+            />
+          </a>
+          <div class="footer__icon-wrapper">
+            <a href="#" class="footer__icon">
+              <img
+                src="./assets/images/common/FacebookLogo.svg"
+                alt=""
+                class="footer__fb"
+              />
+            </a>
+            <a href="#" class="footer__icon footer__icon--ig">
+              <img
+                src="./assets/images/common/InstagramLogo.svg"
+                alt=""
+                class="footer__ig"
+              />
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-half">
+            <div class="footer__nav-quarter">
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./campaign.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >キャンペーン</a
+                  >
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./campaign.html">ライセンス取得</a>
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./campaign.html">貸切体験ダイビング</a>
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./campaign.html">ナイトダイビング</a>
+                </li>
+              </ul>
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./about.html">
+                    <span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >私たちについて</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-quarter">
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./information.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >ダイビング情報</a
+                  >
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./information.html">ライセンス講習</a>
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./information.html">体験ダイビング</a>
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./information.html">ファンダイビング</a>
+                </li>
+              </ul>
+
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./blog.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >ブログ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__nav-half">
+            <div class="footer__nav-quarter">
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./voice.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >お客様の声</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./price.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >料金一覧</a
+                  >
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./price.html">ライセンス講習</a>
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./price.html">体験ダイビング</a>
+                </li>
+                <li class="footer__sub-item">
+                  <a href="./price.html">ファンダイビング</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-quarter">
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./faq.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >よくある質問</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__item-wrapper">
+                <li class="footer__item footer__item--lh">
+                  <a href="./privacy.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >プライバシー<br class="u-mobile" />ポリシー</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./terms.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >利用規約</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__item-wrapper">
+                <li class="footer__item">
+                  <a href="./contact.html"
+                    ><span class="footer__starfish"
+                      ><img
+                        src="./assets/images/common/starfish.png"
+                        alt="ヒトデ" /></span
+                    >お問い合わせ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__small-wrapper">
+        <small class="footer__small">
+          Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.
+        </small>
+      </div>
+    </footer>
+    <button id="js-pagetop" class="pagetop-btn">
+      <span class="pagetop-btn__arrow-wrapper"> </span>
+    </button>
+  </body>
+</html>

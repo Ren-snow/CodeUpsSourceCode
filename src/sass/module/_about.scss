@@ -48,9 +48,6 @@
   @include mq(md) {
     width: 82%;
     height: 100%;
-    // top: rem(80);
-    // bottom: rem(12);
-    // right: 1%;
   }
 }
 
@@ -68,6 +65,7 @@
     transform: translateX(-50%);
   }
 }
+
 .about__copy {
   color: $green;
   font-size: rem(40);
@@ -90,8 +88,6 @@
 .about__text {
   margin-bottom: rem(48);
   @include mq(md) {
-    // padding-top: rem(4);
-    // padding-left: rem(4);
     margin-bottom: rem(38);
   }
 }
@@ -118,4 +114,36 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+
+
+// 下層ページ
+.about__fish-img.about__fish-img--about {
+  margin-left: 0;
+  width: 100%;
+  margin-bottom: rem(40);
+  @include mq(md) {
+    width: 82%;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+.about__contents.about__contents--about {
+  align-items: center;
+  @include mq(md) {
+    top: rem(96);
+  }
+}
+.about__copy.about__copy--about {
+  position: absolute;
+  color: #fff;
+  top: rem(24);
+  left: rem(24);
+  @include mq(md) {
+    position: static;
+  }
+}
+.about__text.about__text--about {
+  margin-bottom: 0;
 }

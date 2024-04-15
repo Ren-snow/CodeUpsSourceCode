@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.detail-card {
+  display: none;
+  border: solid $green 1px;
+  padding: rem(24);
+}
+
+.detail-card.is-active {
+  display: block;
+  @include mq(md) {
+    display: flex;
+    gap: rem(48);
+    align-items: center;
+    
+  }
+}
+.detail-card__content {
+  @include mq(md) {
+    flex: 1;
+  }
+}
+.detail-card__title {
+  tab-size: rem(24);
+  padding-bottom: rem(8);
+  margin-bottom: rem(8);
+  border-bottom: solid $green 1px;
+}
+.detail-card__text {
+  margin-bottom: rem(8);
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}
+
+.detail-card__img {
+  width: 100%;
+  @include mq(md) {
+    flex: 1;
+  }
+}
+.detail-card__img img {
+  aspect-ratio: 297 / 189;
+  object-fit: cover;
+}
+
+

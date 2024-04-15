@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.campaign-sub-cards  {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+}
+
+.campaign-sub-cards__item.card {
+  width: 100%;
+}
+
+.campaign-sub-cards__item.card .card__title {
+  text-align: center;
+}
+
+.campaign-sub-cards__item.card .card__price-before::before {
+  width: rem(76);
+}
+
+.campaign-sub-cards__item.card .card__price-copy {
+  font-size: rem(14);
+}
+
+.campaign-sub-cards__item.card .card__price-before {
+  font-size: rem(20);
+}
+
+.campaign-sub-cards__item.card .card__price-after {
+  font-size: rem(32);
+}
+
+

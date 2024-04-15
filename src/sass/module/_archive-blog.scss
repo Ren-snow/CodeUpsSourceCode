@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.archive-blog__wrapper {
+  @include mq(md) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.archive-blog__main {
+  margin-bottom: rem(80);
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}
+.archive-blog__main-inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(600);
+  @include mq(md) {
+    max-width: none;
+  }
+}
+.archive-blog__side-inner {
+  max-width: rem(294);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: rem(80);
+  @include mq(md) {
+    max-width: none;
+  }
+}
+

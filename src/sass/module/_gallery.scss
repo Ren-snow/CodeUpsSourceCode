@@ -1,0 +1,98 @@
+@use "global" as *;
+
+.gallery__inner {
+  max-width: rem(600);
+  @include mq(md) {
+    max-width: none;
+  }
+}
+.gallery__title {
+  margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: rem(80);
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+  @include mq(md) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: rem(8);
+    grid-auto-flow: dense;
+  }
+}
+
+.gallery__item {
+  pointer-events: none;
+  @include mq(md) {
+    pointer-events: all;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+}
+.gallery__item img {
+  @include mq(md) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery__item:nth-child(6n+1) {
+  @include mq(md) {
+    aspect-ratio: 492 / 746;
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+}
+
+.gallery__item:nth-child(6n+2) {
+  @include mq(md) {
+    aspect-ratio: 580 / 369;
+    grid-column: span 6;
+    grid-row: span 1;
+  }
+}
+
+.gallery__item:nth-child(6n+3) {
+  @include mq(md) {
+    aspect-ratio: 580 / 369;
+    grid-column: span 6;
+    grid-row: span 1;
+  }
+}
+.gallery__item:nth-child(6n+4) {
+  @include mq(md) {
+    aspect-ratio: 580 / 369;
+    grid-column: span 6;
+    grid-row: span 1;
+  }
+}
+.gallery__item:nth-child(6n+5) {
+  @include mq(md) {
+    aspect-ratio: 580 / 369;
+    grid-column: span 6;
+    grid-row: span 1;
+  }
+}
+.gallery__item:nth-child(6n+6) {
+  @include mq(md) {
+    aspect-ratio: 746 / 492;
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+}
+
+
+// ---モーダル表示時
+.gallery__item.is-active {
+  @include mq(md) {
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+

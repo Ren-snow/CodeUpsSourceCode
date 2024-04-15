@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.privacy-terms__title {
+  margin-bottom: rem(40);
+  font-size: rem(24);
+  font-weight: 500;
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+.privacy-terms__contents {
+  line-height: 2em;
+  font-size: rem(16);
+}
+.privacy-terms__text.privacy-terms__text--margin {
+  margin-bottom: rem(24);
+}
+.privacy-policy__list {
+  margin-bottom: rem(24);
+  padding-left: rem(16);
+}
+.privacy-policy__list-item {
+  list-style-type: decimal;
+  
+}
+
+
+
+
