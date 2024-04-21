@@ -10,8 +10,9 @@
   justify-content: center;
   @include mq(md){
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
-    gap: rem(32);
+    gap: rem(16) rem(32);
   }
 }
 

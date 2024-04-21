@@ -2,7 +2,7 @@
 
 .page-404 {
   background: $green;
-  padding-top: rem(98);
+  padding-top: rem(82);
   padding-bottom: rem(40);
   position: relative;
   z-index: 1;
@@ -23,9 +23,10 @@
 }
 .page-404__number {
   font-family: 'Lato', sans-serif;
+  text-align: center;
   font-size: rem(80);
   letter-spacing: 0.5em;
-  line-height: normal;
+  line-height: 1;
   @include mq(md) {
     font-size: rem(160);
   }
@@ -57,5 +58,14 @@
     left: calc(50% - min(47%, 34rem));
     transform: translateX(0);
   }
+}
+.page-404::after {
+  background: $green;
+  position: absolute;
+  display: block;
+  bottom: rem(-1);
+  height: rem(2);
+  width: 100%;
+  content: '';
 }
 

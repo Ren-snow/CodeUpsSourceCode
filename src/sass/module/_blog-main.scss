@@ -5,27 +5,13 @@
     width: calc(706px / 1080px * 100%);
   }
 }
-.blog-main__items {
+.blog-main__articles {
   margin-bottom: rem(80);
-  display: flex;
-  flex-direction: column;
-  gap: rem(40);
-  @include mq(md) {
-    display: grid;
-    row-gap: rem(80);
-    column-gap: rem(40);
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-// --- deactivate hover action 
-// .blog-main__item.article:hover {
-//   filter: brightness(1);
-// }
-
-.blog-main__item.article .article__image {
+.blog-main__article.article .article__image {
   transition: 0.3s;
 }
-.blog-main__item.article:hover .article__image {
+.blog-main__article.article:hover .article__image {
   transform:scale(1.1,1.1);
 }

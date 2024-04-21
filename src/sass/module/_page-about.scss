@@ -2,9 +2,6 @@
 
 .page-about__inner {
   max-width: rem(600);
-  @include mq(md) {
-    max-width: none;
-  }
 }
 .page-about__inner .about__img-wrapper {
   margin-bottom: 0;
@@ -41,7 +38,7 @@
 .page-about__modal source,
 .page-about__modal img {
   @include mq(md) {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
   }
 }

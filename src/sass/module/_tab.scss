@@ -3,11 +3,11 @@
 .tab {
  background: #DDF0F1;
  color: $green;
- padding: rem(10) rem(16);
+ padding: rem(10);
  text-align: center;
  cursor: pointer;
- transition: 0.2s;
- z-index: 2;
+ transition: 0.3s;
+ box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
  @include mq(md) {
   width: auto;
   padding: rem(26) rem(30) rem(29) rem(102);
@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  box-shadow:none;
  }
 }
 .tab::before {
@@ -72,6 +73,9 @@
 .tab.is-active {
   color: #fff;
   background: $green;
+  @include mq(md) {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  }
 }
 .tab__icon {
   @include mq(md) {
@@ -80,4 +84,43 @@
   }
 }
 
+// ------ hover --------
+.tab:hover {
+  background: $green;
+  color: #DDF0F1;
+}
+.tab.is-active:hover {
+  background: #DDF0F1;
+  color: $green;
+}
 
+.tab:nth-child(1):hover::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon1-white.svg);
+  }
+}
+.tab:nth-child(2):hover::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon2-white.svg);
+  }
+}
+.tab:nth-child(3):hover::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon3-white.svg);
+  }
+}
+.tab.is-active:nth-child(1):hover::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon1-green.svg);
+  }
+}
+.tab.is-active:nth-child(2):hover::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon2-green.svg);
+  }
+}
+.tab.is-active:nth-child(3):hover::before {
+  @include mq(md) {
+    background-image: url(../images/common/whale-icon3-green.svg);
+  }
+}

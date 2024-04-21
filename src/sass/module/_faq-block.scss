@@ -8,7 +8,10 @@
   position: relative;
   cursor: pointer;
   @include mq(md) {
+    padding: rem(26) rem(40);
+    padding-right: rem(112);
     margin-bottom: rem(16);
+    transition: 0.3s;
   }
 }
 
@@ -23,20 +26,33 @@
   top: 50%;
   transform: translate-y(-50%) ;
   transition: 0.3s;
+  @include mq(md) {
+    right: rem(40);
+  }
 }
 .faq-block__question::before {
   opacity: 0.3;
+}
+
+
+.faq-block__answer {
+  border: 1px solid $green;
+  padding: rem(24) rem(16);
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
+
+// when clicked
+.faq-block__question.active {
+  @include mq(md) {
+    margin-bottom: 0;
+  }
 }
 .faq-block__question.active::before {
   transform: rotate(90deg);
   opacity: 1;
 }
-
-.faq-block__answer {
-  border: 1px solid $green;
-  padding: rem(24) rem(16);
-}
-
 
 
 

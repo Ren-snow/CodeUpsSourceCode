@@ -133,12 +133,14 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
     $(".js-photo").click(function () {
 			$(".js-photo").toggleClass("is-active");
       $(".js-modal-pic").html($(this).prop("outerHTML"));
+			$('html, body').css('overflow', 'hidden');
       $(".js-overlay").fadeIn(200);
       return false;
     });
     $(".js-overlay").click(function () {
       $(".js-overlay").fadeOut(200);
       $(".js-photo").toggleClass("is-active");
+			$('html, body').removeAttr('style');
       return false;
     });
 
@@ -149,15 +151,56 @@ jQuery(function($) { // この中であればWordpressでも「$」が使用可�
 			const index = $(this).index();
 			$('.js-tab-content').eq(index).addClass('is-active');
 		});
-	});
-});
+		// - switching page -
+		var params = new URLSearchParams(window.location.search);
+		var tabParam = params.get('tab');
+		if (tabParam) {
+		  var tabClass = '.js-tab-' + tabParam;
+		  $('.is-active').removeClass('is-active');
+		  $(tabClass).addClass('is-active');
+			var paramIndex =  $(tabClass).index();
+    	$('.js-tab-content').eq(paramIndex).addClass				('is-active');
+		}
+		// --------------------------------------
 
-// ----- accordion ------
-var targetSelector = '.blog-side__year-list:not(:first-child) .blog-side__month-list';
-$(targetSelector).hide(); 
-$(".js-accordion-title").on("click", function() {
-			$(this).next().slideToggle(400);
-			$(this).toggleClass("active",400);
-		});
+		// ----- accordion ------
+		var targetSelector = '.blog-side__year-list:not(:first-child) .blog-side__month-list';
+		$(targetSelector).hide(); 
+		$(".js-accordion-title").on("click", function() {
+					$(this).next().slideToggle(400);
+					$(this).toggleClass("active",400);
+				});
 //  ----------
+	});
+
+	// ----- validation -------
+	$('#form').submit(function(e) {
+		// 必須フィールドが空の場合にエラーを表示する
+		var isValid = true;
+		$(this).find('.required').each(function(){
+			// その他の入力フィールドの場合
+					if ($(this).val().trim() === '') {
+						$(this).closest('.required').addClass('error');
+							isValid = false;
+					} else {
+							$(this).closest('.required').removeClass('error');
+					}
+			});
+			// チェックボックス
+			var checkedSum;
+			checkedSum = $('.form__input-checkbox:checked').length;
+			if( checkedSum < 1 ) {
+				isValid = false;
+			}
+			if (!$('.form__input-agreement').is(':checked')) {
+				isValid = false;
+			}
+		if (!isValid) {
+			e.preventDefault(); // フォーム送信をキャンセル
+			$('.page-contact__error-message').addClass('error');
+		}
+	});
+	// ---------------------
+		
+});
 

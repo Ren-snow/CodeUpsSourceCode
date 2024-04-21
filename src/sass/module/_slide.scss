@@ -18,9 +18,12 @@
 }
 .slide__image {
   height: 100%;
+}
+.slide__image source,
+.slide__image img {
+  height: inherit;
   object-fit: cover;
 }
-
 
 .slide__bg:nth-child(1) {
 	animation-delay: -2s;

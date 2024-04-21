@@ -17,6 +17,7 @@
   height: rem(55);
   left: rem(16);
   top: rem(56);
+  z-index: -2;
   @include mq(md) {
     width: rem(301);
     height: rem(138);
@@ -25,5 +26,10 @@
   }
 }
 
+.breadcrumb.breadcrumb--no-background::after {
+  @include mq(md) {
+    background-image: none;
+  }
+}
 
 

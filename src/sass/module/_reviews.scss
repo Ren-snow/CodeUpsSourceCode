@@ -1,14 +1,16 @@
 @use "global" as *; 
 .reviews {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
   @include mq(md) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.7%;
-    row-gap: rem(80);
+    gap: rem(80) rem(40);
   }
 }
 .reviews__item {
-  margin: 0 auto rem(40);
+  margin: 0 auto;
   @include mq(md) {
     margin: 0 auto
   }

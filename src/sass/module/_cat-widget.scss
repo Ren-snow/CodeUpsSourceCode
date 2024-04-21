@@ -6,7 +6,7 @@
   border: 1px $green solid;
   font-size: rem(14);
   color: $green;
-  z-index: 2;
+  transition: 0.3s;
   @include mq(md) {
     width: rem(162);
   }
@@ -25,3 +25,12 @@
 }
 
 
+// ------- hover ------
+.cat-widget:hover {
+  background: $green;
+  color: #fff;
+}
+.cat-widget.active:hover {
+  background: #fff;
+  color: $green;
+}

@@ -1,13 +1,27 @@
 @use "global" as *; 
 
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  @include mq(md) {
+    display: grid;
+    gap: rem(80) rem(40);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.articles--2col {
+  @include mq(md) {
+    gap: rem(80) rem(40);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .articles__item  {
-  margin: 0 auto rem(40);
+  margin: 0 auto;
   @include mq(md) {
     margin: 0 auto;
   }
 }
 
-.articles__item:last-child {
-  margin-bottom: 0;
-}
 

@@ -11,3 +11,11 @@
     margin-bottom: rem(258);
   }
 }
+.breadcrumb-margin.breadcrumb-margin--info {
+  margin-bottom: rem(120);
+}
+.breadcrumb-margin.breadcrumb-margin--404 {
+  @include mq(md) {
+    margin-bottom: rem(120);
+  }
+}
