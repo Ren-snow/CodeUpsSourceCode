@@ -98,8 +98,12 @@
 
 // ------- 404 --------
 .btn.btn--404 {
-  padding-right: rem(92);
-  padding-left: rem(44);
+  padding-right: rem(96);
+  padding-left: rem(40);
+}
+.btn.btn--404 span::before,
+.btn.btn--404 span::after {
+  right: rem(-60);
 }
 
 .btn.btn--white {
